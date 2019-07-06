@@ -1,1 +1,13 @@
-footer{background-color:#f5f5f5}
+header .fixed-top {
+  box-shadow: 0 8px 50px -20px rgba(0, 0, 0, 0.75); }
+  header .fixed-top .navbar {
+    width: 85%;
+    height: 75px;
+    margin: 0 auto; }
+    header .fixed-top .navbar .site-logo {
+      height: 55px; }
+
+footer {
+  background-color: #f5f5f5; }
+
+/*# sourceMappingURL=main.css.map */
