@@ -57,10 +57,25 @@ header {
       header .fixed-top .navbar > div.right-nav-container nav ul li {
         padding-left: 10px;
         padding-right: 10px; }
-        header .fixed-top .navbar > div.right-nav-container nav ul li a span {
-          font-size: 10px;
-          color: #B72425;
-          /* button symbols here */ }
+        header .fixed-top .navbar > div.right-nav-container nav ul li a {
+          display: flex;
+          flex-direction: row;
+          padding: 0 2px 10px 5px; }
+          header .fixed-top .navbar > div.right-nav-container nav ul li a div {
+            font-size: 10px;
+            color: #B72425;
+            min-height: 25px;
+            min-width: 25px; }
+            header .fixed-top .navbar > div.right-nav-container nav ul li a div.btn-icon {
+              padding: 0 4px; }
+              header .fixed-top .navbar > div.right-nav-container nav ul li a div.btn-icon.help {
+                background: url("../../img/header/help.svg") no-repeat;
+                background-size: 25px; }
+              header .fixed-top .navbar > div.right-nav-container nav ul li a div.btn-icon.login {
+                background: url("../../img/header/user.png") no-repeat;
+                background-size: 25px; }
+            header .fixed-top .navbar > div.right-nav-container nav ul li a div.btn-label {
+              padding: 4px 6px; }
   header .video-container {
     height: calc(100vh - 75px);
     margin-top: 75px;
