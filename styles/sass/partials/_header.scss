@@ -1,6 +1,7 @@
 $header-height: 75px;
 $red: #B72425;
 $red-border: 3px solid $red;
+$black: #262626;
 
 header {
 	height: calc(100vh - #{$header-height});
@@ -12,10 +13,11 @@ header {
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
+		color: #262626;
 	}
 
 	.top-nav-container,
-	#top-right-nav,
+	.right-nav-container,
 	nav,
 	ul,
 	li {
@@ -36,27 +38,28 @@ header {
 				height: 55px;
 			}
 
-			.top-nav-container {
-				height: 100%;
+			> div {
 
 				nav {
-					height: 100%;
 
 					ul {
-						height: 100%;
 
 						li {
-							height: 100%;
 							margin: auto 0;
 							padding: 1em 0;
+							cursor: pointer;
 
 							.dropdown-trigger {
 								border-bottom: 3px transparent solid;
-								padding: auto 0 !important;			
+								padding: 0 0 4px;
+								margin: 10px 0;
+								font-family: Lato, sans-serif;
+								font-weight: 700;
+								font-size: 15px;
+								text-transform: uppercase;
 							}
 
-
-							@media only screen and (min-width: 1024px) {
+							@media only screen and (min-width: 978px) {
 								&.dropdown:hover {
 									& > .dropdown-trigger {
 										border-bottom: $red-border;
@@ -78,8 +81,37 @@ header {
 								border-top: $red-border;
 							}
 						}
+
+						.separator {
+							width: 2px;
+							height: 16px;
+							background-color: $black;
+							margin: 29px 8px;
+						}
 					}
 				}
+
+				&.right-nav-container {
+					nav {
+						ul {
+							li {
+								padding-left: 10px;
+								padding-right: 10px;
+
+								a {
+									span {
+										font-size: 10px;
+										color: $red;
+
+										/* button symbols here */
+
+									}
+								}
+							}
+						}
+					}
+				}
+
 			}
 		}
 	}

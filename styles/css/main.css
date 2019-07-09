@@ -6,9 +6,10 @@ header {
   header * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    color: #262626; }
   header .top-nav-container,
-  header #top-right-nav,
+  header .right-nav-container,
   header nav,
   header ul,
   header li {
@@ -23,32 +24,43 @@ header {
       padding: 0; }
       header .fixed-top .navbar .site-logo {
         height: 55px; }
-      header .fixed-top .navbar .top-nav-container {
-        height: 100%; }
-        header .fixed-top .navbar .top-nav-container nav {
-          height: 100%; }
-          header .fixed-top .navbar .top-nav-container nav ul {
-            height: 100%; }
-            header .fixed-top .navbar .top-nav-container nav ul li {
-              height: 100%;
-              margin: auto 0;
-              padding: 1em 0; }
-              header .fixed-top .navbar .top-nav-container nav ul li .dropdown-trigger {
-                border-bottom: 3px transparent solid;
-                padding: auto 0 !important; }
-              @media only screen and (min-width: 1024px) {
-                header .fixed-top .navbar .top-nav-container nav ul li.dropdown:hover > .dropdown-trigger {
-                  border-bottom: 3px solid #B72425; }
-                header .fixed-top .navbar .top-nav-container nav ul li.dropdown:hover > .submenu {
-                  display: block;
-                  background-color: #fff; } }
-              header .fixed-top .navbar .top-nav-container nav ul li .submenu {
-                display: none;
-                position: absolute;
-                top: 75px;
-                padding: 0.5em;
-                width: 100%;
-                border-top: 3px solid #B72425; }
+      header .fixed-top .navbar > div nav ul li {
+        margin: auto 0;
+        padding: 1em 0;
+        cursor: pointer; }
+        header .fixed-top .navbar > div nav ul li .dropdown-trigger {
+          border-bottom: 3px transparent solid;
+          padding: 0 0 4px;
+          margin: 10px 0;
+          font-family: Lato, sans-serif;
+          font-weight: 700;
+          font-size: 15px;
+          text-transform: uppercase; }
+        @media only screen and (min-width: 978px) {
+          header .fixed-top .navbar > div nav ul li.dropdown:hover > .dropdown-trigger {
+            border-bottom: 3px solid #B72425; }
+          header .fixed-top .navbar > div nav ul li.dropdown:hover > .submenu {
+            display: block;
+            background-color: #fff; } }
+        header .fixed-top .navbar > div nav ul li .submenu {
+          display: none;
+          position: absolute;
+          top: 75px;
+          padding: 0.5em;
+          width: 100%;
+          border-top: 3px solid #B72425; }
+      header .fixed-top .navbar > div nav ul .separator {
+        width: 2px;
+        height: 16px;
+        background-color: #262626;
+        margin: 29px 8px; }
+      header .fixed-top .navbar > div.right-nav-container nav ul li {
+        padding-left: 10px;
+        padding-right: 10px; }
+        header .fixed-top .navbar > div.right-nav-container nav ul li a span {
+          font-size: 10px;
+          color: #B72425;
+          /* button symbols here */ }
   header .video-container {
     height: calc(100vh - 75px);
     margin-top: 75px;
