@@ -54,6 +54,9 @@ footer {
     }
     }
   }
+  small{
+    margin-left: 15px;
+  }
 
 }
 
@@ -63,5 +66,8 @@ footer {
     hr{
       display: block;
     }
+  }
+  small{
+    margin-left: 0 !important;
   }
 }
