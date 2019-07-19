@@ -66,6 +66,16 @@ footer {
     hr{
       display: block;
     }
+    a:not(.collapsed) > .iconColl::before{
+       content:"\2796";
+
+
+    }
+    .collapsed > .iconColl::before{
+      content:"\2795";
+
+
+    }
   }
   small{
     margin-left: 0 !important;
