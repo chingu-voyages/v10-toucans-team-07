@@ -17,8 +17,6 @@ header {
 		color: #262626;
 	}
 
-	.top-nav-container,
-	.right-nav-container,
 	nav,
 	ul,
 	li {
@@ -30,114 +28,116 @@ header {
 		z-index: 10;
 
 		.navbar {
-			width: 82%;
+			width: 1095px; /*82%*/
 			height: $header-height;
 			margin: 0 auto;
 			padding: 0;
 
 			.site-logo {
 				height: 55px;
+				flex-basis: 25%;
 			}
 
-			> div {
 
-				nav {
+			> nav {
 
-					ul {
+				ul {
 
-						li {
-							margin: auto 0;
-							padding: 1em 0;
-							cursor: pointer;
+					li {
+						margin: auto 0;
+						cursor: pointer;
+						min-width: 20px;
 
-							.dropdown-trigger {
-								border-bottom: 3px transparent solid;
-								padding: 0 0 4px;
-								margin: 10px 0;
-								font-family: Lato, sans-serif;
-								font-weight: 700;
-								font-size: 15px;
-								text-transform: uppercase;
-							}
-
-							@media only screen and (min-width: 978px) {
-								&.dropdown:hover {
-									& > .dropdown-trigger {
-										color: $black;
-										border-bottom: $red-border;
-									}
-
-									& >.submenu {
-										display: block;
-										background-color: #fff;
-									}
-								} 
-							}
-
-							.submenu {
-								display: none;
-								position: absolute;
-								top: $header-height;
-								padding: 0.5em;
-								width: 100%;
-								border-top: $red-border;
-								cursor: default;
-							}
+						.dropdown-trigger {
+							border-bottom: 3px transparent solid;
+							padding: 0 0 4px;
+							margin: 10px 0;
+							font-family: Lato, sans-serif;
+							font-weight: 700;
+							font-size: 15px;
+							text-transform: uppercase;
+							white-space: pre-wrap !important;
+							word-wrap: break-word;
+							text-align: center;
+							// https://getbootstrap.com/docs/4.0/utilities/spacing/
 						}
 
-						.separator {
-							width: 2px;
-							height: 16px;
-							background-color: $black;
-							margin: 29px 8px;
+						@media only screen and (min-width: 978px) {
+							&.dropdown:hover {
+								& > .dropdown-trigger {
+									color: $black;
+									border-bottom: $red-border;
+								}
+
+								& >.submenu {
+									display: block;
+									background-color: #fff;
+								}
+							} 
 						}
+
+						.submenu {
+							display: none;
+							position: absolute;
+							top: $header-height;
+							padding: 0.5em;
+							width: 100%;
+							border-top: $red-border;
+							cursor: default;
+						}
+					}
+
+					.separator {
+						width: 2px;
+						height: 16px;
+						background-color: $black;
+						margin: 32px 8px 26px;
 					}
 				}
 
-				&.right-nav-container {
-					nav {
-						ul {
-							li {
-								padding-left: 10px;
-								padding-right: 10px;
+				&#top-middle-nav {
+					flex-basis: 50%;
+				}
 
-								a {
-									display: flex;
-									flex-direction: row;
-									padding: 0 2px 10px 5px;
-
-									div {
-										font-size: 10px;
-										color: $red;
-										min-height: $icon-height;
-										min-width: $icon-height;
-
-										&.btn-icon {
-											padding: 0 4px;
-
-											&.help {
-												background: url('../../img/header/help.svg') no-repeat;
-												background-size: $icon-height;
-											}
-
-											&.login {
-												background: url('../../img/header/user.png') no-repeat;
-												background-size: $icon-height;
-											}
-											
+				&#top-right-nav {
+					flex-basis: 20%;
+					ul {
+						li {
+							a {
+								display: flex;
+								flex-direction: row;
+								padding: 0 2px 10px 5px;
+	
+								div {
+									font-size: 10px;
+									color: $red;
+									min-height: $icon-height;
+									min-width: $icon-height;
+	
+									&.btn-icon {
+										padding: 0 4px;
+	
+										&.help {
+											background: url('../../img/header/help.svg') no-repeat;
+											background-size: $icon-height;
 										}
-
-										&.btn-label {
-											padding: 4px 6px;
+	
+										&.login {
+											background: url('../../img/header/user.png') no-repeat;
+											background-size: $icon-height;
 										}
-
+										
 									}
+	
+									&.btn-label {
+										padding: 4px 6px;
+									}
+	
 								}
 							}
 						}
 					}
 				}
-
 			}
 		}
 	}

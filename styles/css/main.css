@@ -8,8 +8,6 @@ header {
     margin: 0;
     padding: 0;
     color: #262626; }
-  header .top-nav-container,
-  header .right-nav-container,
   header nav,
   header ul,
   header li {
@@ -18,32 +16,37 @@ header {
     box-shadow: 0 8px 50px -20px rgba(0, 0, 0, 0.75);
     z-index: 10; }
     header .fixed-top .navbar {
-      width: 82%;
+      width: 1095px;
+      /*82%*/
       height: 75px;
       margin: 0 auto;
       padding: 0; }
       header .fixed-top .navbar .site-logo {
-        height: 55px; }
-      header .fixed-top .navbar > div nav ul li {
+        height: 55px;
+        flex-basis: 25%; }
+      header .fixed-top .navbar > nav ul li {
         margin: auto 0;
-        padding: 1em 0;
-        cursor: pointer; }
-        header .fixed-top .navbar > div nav ul li .dropdown-trigger {
+        cursor: pointer;
+        min-width: 20px; }
+        header .fixed-top .navbar > nav ul li .dropdown-trigger {
           border-bottom: 3px transparent solid;
           padding: 0 0 4px;
           margin: 10px 0;
           font-family: Lato, sans-serif;
           font-weight: 700;
           font-size: 15px;
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          white-space: pre-wrap !important;
+          word-wrap: break-word;
+          text-align: center; }
         @media only screen and (min-width: 978px) {
-          header .fixed-top .navbar > div nav ul li.dropdown:hover > .dropdown-trigger {
+          header .fixed-top .navbar > nav ul li.dropdown:hover > .dropdown-trigger {
             color: #262626;
             border-bottom: 3px solid #B72425; }
-          header .fixed-top .navbar > div nav ul li.dropdown:hover > .submenu {
+          header .fixed-top .navbar > nav ul li.dropdown:hover > .submenu {
             display: block;
             background-color: #fff; } }
-        header .fixed-top .navbar > div nav ul li .submenu {
+        header .fixed-top .navbar > nav ul li .submenu {
           display: none;
           position: absolute;
           top: 75px;
@@ -51,32 +54,33 @@ header {
           width: 100%;
           border-top: 3px solid #B72425;
           cursor: default; }
-      header .fixed-top .navbar > div nav ul .separator {
+      header .fixed-top .navbar > nav ul .separator {
         width: 2px;
         height: 16px;
         background-color: #262626;
-        margin: 29px 8px; }
-      header .fixed-top .navbar > div.right-nav-container nav ul li {
-        padding-left: 10px;
-        padding-right: 10px; }
-        header .fixed-top .navbar > div.right-nav-container nav ul li a {
+        margin: 32px 8px 26px; }
+      header .fixed-top .navbar > nav#top-middle-nav {
+        flex-basis: 50%; }
+      header .fixed-top .navbar > nav#top-right-nav {
+        flex-basis: 20%; }
+        header .fixed-top .navbar > nav#top-right-nav ul li a {
           display: flex;
           flex-direction: row;
           padding: 0 2px 10px 5px; }
-          header .fixed-top .navbar > div.right-nav-container nav ul li a div {
+          header .fixed-top .navbar > nav#top-right-nav ul li a div {
             font-size: 10px;
             color: #B72425;
             min-height: 25px;
             min-width: 25px; }
-            header .fixed-top .navbar > div.right-nav-container nav ul li a div.btn-icon {
+            header .fixed-top .navbar > nav#top-right-nav ul li a div.btn-icon {
               padding: 0 4px; }
-              header .fixed-top .navbar > div.right-nav-container nav ul li a div.btn-icon.help {
+              header .fixed-top .navbar > nav#top-right-nav ul li a div.btn-icon.help {
                 background: url("../../img/header/help.svg") no-repeat;
                 background-size: 25px; }
-              header .fixed-top .navbar > div.right-nav-container nav ul li a div.btn-icon.login {
+              header .fixed-top .navbar > nav#top-right-nav ul li a div.btn-icon.login {
                 background: url("../../img/header/user.png") no-repeat;
                 background-size: 25px; }
-            header .fixed-top .navbar > div.right-nav-container nav ul li a div.btn-label {
+            header .fixed-top .navbar > nav#top-right-nav ul li a div.btn-label {
               padding: 4px 6px; }
   header .video-container {
     height: calc(100vh - 75px);
