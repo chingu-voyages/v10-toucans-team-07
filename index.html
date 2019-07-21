@@ -2,19 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- RESPONSIVE -->
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- SEO -->
+
     <title>Document</title>
     <!-- STYLESHEET -->
     <link
       href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
       rel="stylesheet"
     />
+    
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -28,10 +29,7 @@
       <!--                MAIN ONE                    -->
       <section class="section-one">
         <div class="notebook-container">
-          <div
-            class="notebook-image rellax"
-            data-rellax-speed="1">
-          </div>
+          <div class="notebook-image rellax" data-rellax-speed="1"></div>
         </div>
         <div class="flexpath-title">
           <div class="title">
@@ -53,16 +51,19 @@
               >
             </button>
           </div>
+          <img class="banana-desktop" src="/img/main/images/HP_bananaCoffee_desktop_450x517px.jpg" alt="coffee_notebook">
         </div>
+        
         <div
           class="coffee-img rellax"
           data-rellax-speed="1"
           style="z-index: -100"
         >
-          <img
+          <img class="banana-mobile"
             src="/img/main/images/HP_bananaCoffee_mobile_241x278px.jpg"
             alt="_blank"
           />
+          
         </div>
         <div class="degrees">
           <div class="degrees-title">
@@ -97,9 +98,11 @@
       </section>
       <!--               MAIN TWO            -->
       <section class="section-two">
-        <div class="floating-card">
+        <div class="floating-card parallax-card">
+          <div class="svg-ampersand"></div>
           <div class="card-inner title-container">
             <div class="red-line"></div>
+
             <h1>
               The Capella difference
             </h1>
@@ -130,13 +133,18 @@
           src="/img/main/images/HP_experience_tablet_768x810px.jpg"
           alt="_blank"
         />
+        <img
+          class="bus-pic-desktop"
+          src="/img/main/images/HP_experience_desktop_1440x810px.jpg"
+          alt="_blank"
+        />
       </section>
       <!--              MAIN THREE             -->
       <section class="container-fluid section-three">
         <div class="accredited">
           <!--            CAROUSEL MOBILE            -->
           <div class="fadein-carousel">
-            <ul class="fadein">
+            <div class="fadein">
               <img
                 src="/img/main/icons/accreditation_abet_175x110.jpg"
                 alt="abet"
@@ -153,8 +161,8 @@
                 src="/img/main/icons/accreditation_ccne_85x110.png"
                 alt="ccne"
               />
-            </ul>
-            <ul class="fadein">
+            </div>
+            <div class="fadein">
               <img
                 src="/img/main/icons/accreditation_abet_175x110.jpg"
                 alt="abet"
@@ -171,28 +179,33 @@
                 src="/img/main/icons/accreditation_ccne_85x110.png"
                 alt="ccne"
               />
-            </ul>
+            </div>
           </div>
 
           <!--               DESKTOP LOGOS              -->
-          <div class="accr-logos" style="display: none">
-            <ul class="ul-logos">
-              <li class="logo-item">
-                <a href="/img/main/icons/accreditation_abet_175x110.jpg"></a>
-              </li>
-              <li class="logo-item">
-                <a href="/img/main/icons/accreditation_acbsp_100x110.jpg"></a>
-              </li>
-              <li class="logo-item">
-                <a href="/img/main/icons/accreditation_cacrep_85x110.jpg"></a>
-              </li>
-              <li class="logo-item">
-                <a href="/img/main/icons/accreditation_ccne_85x110.png"></a>
-              </li>
-            </ul>
+          <div class="fadein-carousel-desktop">
+            <div class="fadein-desktop">
+              <img
+                src="/img/main/icons/accreditation_abet_175x110.jpg"
+                alt="abet"
+              />
+              <img
+                src="/img/main/icons/accreditation_acbsp_100x110.jpg"
+                alt="acbsp"
+              />
+              <img
+                src="/img/main/icons//accreditation_cacrep_85x110.jpg"
+                alt="cacrep"
+              />
+              <img
+                src="/img/main/icons/accreditation_ccne_85x110.png"
+                alt="ccne"
+              />
+            </div>
           </div>
+
           <div class="accr-title">
-            <h5 >
+            <h5>
               Capella University is accredited by the Higher learning
               Commission.
             </h5>
@@ -405,9 +418,11 @@
       </div>
     </footer>
 
-    <script src="js/bootstrap.min.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js"></script>
-    <script src="js/jquery-3.4.1.js"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>

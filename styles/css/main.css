@@ -58,6 +58,10 @@ ul {
     color: #b62025;
     text-decoration: none;
   }
+  main .flexpath-title .banana-desktop,
+  main .title-container .banana-desktop {
+    display: none;
+  }
   main .coffee-img {
     margin-left: 6em;
     height: 14rem;
@@ -121,6 +125,9 @@ ul {
   .floating-card h1 {
     color: #262626;
   }
+  .bus-pic-desktop {
+    display: none;
+  }
   .bus-pic {
     height: 23em;
     width: 100%;
@@ -128,6 +135,9 @@ ul {
        object-fit: cover;
     -o-object-position: 100% 0;
        object-position: 100% 0;
+  }
+  .fadein-carousel-desktop {
+    display: none;
   }
   .fadein-carousel {
     -ms-flex-line-pack: center;
@@ -218,6 +228,9 @@ ul {
 }
 
 @media screen and (min-width: 715px) {
+  main .accr-logos {
+    display: block;
+  }
   main .section-one {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -259,7 +272,7 @@ ul {
     margin: 0 auto;
     width: 100%;
   }
-  main .section-one .coffee-img img {
+  main .section-one .coffee-img .banana-mobile {
     margin-left: 70%;
   }
   main .section-one .degrees {
@@ -276,10 +289,20 @@ ul {
     padding-left: 2em;
   }
   main .section-one .degrees .degrees-title .title {
-    width: 65%;
+    width: 75%;
+  }
+  main .section-one .degrees .degrees-title .title h1 {
+    font-size: 1.9em;
+  }
+  main .section-one .degrees .degrees-title .title p {
+    line-height: 1.9em;
+    word-spacing: .3em;
   }
   main .section-two {
     position: relative;
+  }
+  main .section-two .svg-ampersand {
+    display: none;
   }
   main .section-two .floating-card {
     width: 720px;
@@ -303,6 +326,9 @@ ul {
     font-size: 1.1em;
     font-weight: 600;
   }
+  main .section-two .bus-pic-desktop {
+    display: none;
+  }
   main .section-two .bus-pic {
     padding-top: 4em;
     height: 100%;
@@ -318,6 +344,232 @@ ul {
   }
   main .section-three .accr-information {
     width: 65%;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  main .section-one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .section-one .notebook-container {
+    padding-top: 10em;
+    width: 60%;
+    height: 1150px;
+  }
+  main .section-one .notebook-container .notebook-image {
+    background: no-repeat url("/img/main/images/HP_notebooksPen_desktop_618x972px.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+  }
+  main .section-one .flexpath-title {
+    width: 38%;
+    padding-right: 4em;
+  }
+  main .section-one .flexpath-title .title {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  main .section-one .flexpath-title .title h1 {
+    width: 85%;
+    font-family: "lato-bold", sans-serif;
+    font-weight: 700;
+  }
+  main .section-one .coffee-img {
+    height: 0;
+    position: relative;
+    top: -300px;
+    right: -50px;
+    padding: 0;
+    margin: 0;
+  }
+  main .section-two {
+    padding-top: 5em;
+  }
+  main .section-two .floating-card {
+    width: 720px;
+    height: 520px;
+    background-color: white;
+    word-spacing: 0.2em;
+    line-height: 1.9em;
+    position: absolute;
+    top: auto 30%;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+    margin: auto;
+  }
+  main .section-two .floating-card .card-inner {
+    width: 80%;
+    margin: 0 auto;
+  }
+  main .section-two .floating-card .red-button {
+    width: 70%;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  main .section-two .bus-pic-desktop {
+    display: block;
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%;
+  }
+  main .section-two .bus-pic {
+    display: none;
+  }
+  main .section-three .fadein-carousel {
+    display: none;
+  }
+  main .section-three .fadein-carousel-desktop {
+    padding-top: 2em;
+    display: block;
+    width: 700px;
+    margin: 0 auto;
+  }
+  main .section-three .fadein-carousel-desktop .fadein-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .section-three .fadein-carousel-desktop .fadein-desktop img {
+    height: 110px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main .section-one .notebook-container {
+    height: 1350px;
+    width: 55%;
+  }
+  main .section-one .flexpath-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 45%;
+    padding-right: 0;
+  }
+  main .section-one .flexpath-title .title {
+    width: 85%;
+    padding: 2em;
+  }
+  main .section-one .flexpath-title .title .red-line {
+    display: block;
+  }
+  main .section-one .flexpath-title .title h1 {
+    font-size: 2.2em;
+    line-height: 1.2em;
+  }
+  main .section-one .flexpath-title .title p {
+    width: 90%;
+    line-height: 1.8em;
+    font-size: 1.1em;
+  }
+  main .section-one .flexpath-title .title .red-button {
+    padding: 0.7em;
+    width: 72%;
+  }
+  main .section-one .flexpath-title .banana-desktop {
+    padding-top: 2em;
+    display: block;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 50%;
+  }
+  main .section-one .coffee-img .banana-mobile {
+    display: none;
+  }
+  main .section-one .degrees {
+    width: 75%;
+  }
+  main .section-one .degrees .degrees-title {
+    width: 60%;
+  }
+  main .section-one .degrees .degrees-stats {
+    width: 30%;
+  }
+  main .section-one .degrees .degrees-stats .top-stats {
+    width: 90%;
+  }
+  main .section-one .degrees .degrees-stats .bottom-stats {
+    width: 90%;
+  }
+  main .section-two .floating-card {
+    width: 600px;
+    height: 620px;
+    line-height: 1.8em;
+    left: -27em;
+    bottom: 0;
+  }
+  main .section-two .floating-card .svg-ampersand {
+    display: block;
+    background: no-repeat url(/img/main/images/ampersand.svg);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: -70px;
+    top: -100px;
+  }
+  main .section-two .floating-card .card-inner {
+    width: 75%;
+    padding-left: 1em;
+    padding-top: 3em;
+  }
+  main .section-two .floating-card .card-inner p {
+    padding: 0;
+    font-size: 1em;
+    width: 90%;
+  }
+  main .section-two .floating-card .card-inner h1 {
+    font-weight: bold;
+    font-size: 1.7em;
+  }
+  main .section-two .floating-card .card-inner .red-button {
+    font-size: 1em;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  main .section-one .flexpath-title .title {
+    width: 60%;
+    padding: 2em;
+  }
+  main .section-one .degrees {
+    padding-left: 25em;
+    width: 100%;
+  }
+  main .section-one .degrees .degrees-title .title {
+    padding: 0 1em;
+    width: 80%;
+  }
+  main .section-one .degrees .degrees-title .title h1 {
+    width: 85%;
+  }
+  main .section-one .degrees .degrees-title p {
+    font-size: 1.1em;
+    line-height: 5em;
+  }
+  main .section-one .degrees .degrees-stats {
+    padding-left: 2em;
+    width: 50%;
+    font-size: 1.1em;
+  }
+  main .section-one .degrees .degrees-stats .top-stats {
+    width: 40%;
+  }
+  main .section-one .degrees .degrees-stats .bottom-stats {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=main.css.map */
