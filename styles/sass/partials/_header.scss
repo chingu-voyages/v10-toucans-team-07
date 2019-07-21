@@ -28,22 +28,22 @@ header {
 		z-index: 10;
 
 		.navbar {
-			width: 1095px; /*82%*/
+			width: 1110px; /*82%*/
 			height: $header-height;
 			margin: 0 auto;
 			padding: 0;
+			justify-content: space-between;
 
 			.site-logo {
 				height: 55px;
-				flex-basis: 25%;
+				flex-basis: 20%;
 			}
-
 
 			> nav {
 
 				ul {
 
-					li {
+					.nav-item {
 						margin: auto 0;
 						cursor: pointer;
 						min-width: 20px;
@@ -53,13 +53,12 @@ header {
 							padding: 0 0 4px;
 							margin: 10px 0;
 							font-family: Lato, sans-serif;
-							font-weight: 700;
-							font-size: 15px;
+							font-weight: 900;
+							font-size: 14.5px;
 							text-transform: uppercase;
 							white-space: pre-wrap !important;
 							word-wrap: break-word;
 							text-align: center;
-							// https://getbootstrap.com/docs/4.0/utilities/spacing/
 						}
 
 						@media only screen and (min-width: 978px) {
@@ -75,34 +74,30 @@ header {
 								}
 							} 
 						}
-
-						.submenu {
-							display: none;
-							position: absolute;
-							top: $header-height;
-							padding: 0.5em;
-							width: 100%;
-							border-top: $red-border;
-							cursor: default;
-						}
 					}
 
 					.separator {
 						width: 2px;
 						height: 16px;
 						background-color: $black;
-						margin: 32px 8px 26px;
+						margin: 30px 8px 29px;
 					}
 				}
 
 				&#top-middle-nav {
-					flex-basis: 50%;
+					flex-basis: 46%;
 				}
 
 				&#top-right-nav {
-					flex-basis: 20%;
-					ul {
-						li {
+					flex-basis: 23%;
+
+					& > ul {
+						justify-content: flex-end;
+
+						& > li {
+							padding-left: 10px;
+							padding-right: 10px;
+
 							a {
 								display: flex;
 								flex-direction: row;
@@ -132,9 +127,52 @@ header {
 									&.btn-label {
 										padding: 4px 6px;
 									}
-	
 								}
 							}
+
+							.submenu {
+								font-size: 14.5px;
+
+								li {
+									font-size: 14.3px;
+								}
+
+								&.to-left {
+									width: 160px;
+									position: absolute;
+									left: -65px;
+
+									li {
+										padding: 2px 0;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.submenu {
+					width: 250px;
+					display: none;
+					position: absolute;
+					top: $header-height;
+					padding: 0.5em;
+					border-top: $red-border;
+					cursor: default;
+
+					h5 {
+						font-family: Lato, sans-serif;
+						font-weight: 700;
+						text-transform: uppercase;
+					}
+
+					ul {
+						list-style: none;
+
+						li:hover, a:hover {
+							color: $red;
+							text-decoration: underline;
+							cursor: pointer;
 						}
 					}
 				}

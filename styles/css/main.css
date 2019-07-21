@@ -16,72 +16,98 @@ header {
     box-shadow: 0 8px 50px -20px rgba(0, 0, 0, 0.75);
     z-index: 10; }
     header .fixed-top .navbar {
-      width: 1095px;
+      width: 1110px;
       /*82%*/
       height: 75px;
       margin: 0 auto;
-      padding: 0; }
+      padding: 0;
+      justify-content: space-between; }
       header .fixed-top .navbar .site-logo {
         height: 55px;
-        flex-basis: 25%; }
-      header .fixed-top .navbar > nav ul li {
+        flex-basis: 20%; }
+      header .fixed-top .navbar > nav ul .nav-item {
         margin: auto 0;
         cursor: pointer;
         min-width: 20px; }
-        header .fixed-top .navbar > nav ul li .dropdown-trigger {
+        header .fixed-top .navbar > nav ul .nav-item .dropdown-trigger {
           border-bottom: 3px transparent solid;
           padding: 0 0 4px;
           margin: 10px 0;
           font-family: Lato, sans-serif;
-          font-weight: 700;
-          font-size: 15px;
+          font-weight: 900;
+          font-size: 14.5px;
           text-transform: uppercase;
           white-space: pre-wrap !important;
           word-wrap: break-word;
           text-align: center; }
         @media only screen and (min-width: 978px) {
-          header .fixed-top .navbar > nav ul li.dropdown:hover > .dropdown-trigger {
+          header .fixed-top .navbar > nav ul .nav-item.dropdown:hover > .dropdown-trigger {
             color: #262626;
             border-bottom: 3px solid #B72425; }
-          header .fixed-top .navbar > nav ul li.dropdown:hover > .submenu {
+          header .fixed-top .navbar > nav ul .nav-item.dropdown:hover > .submenu {
             display: block;
             background-color: #fff; } }
-        header .fixed-top .navbar > nav ul li .submenu {
-          display: none;
-          position: absolute;
-          top: 75px;
-          padding: 0.5em;
-          width: 100%;
-          border-top: 3px solid #B72425;
-          cursor: default; }
       header .fixed-top .navbar > nav ul .separator {
         width: 2px;
         height: 16px;
         background-color: #262626;
-        margin: 32px 8px 26px; }
+        margin: 30px 8px 29px; }
       header .fixed-top .navbar > nav#top-middle-nav {
-        flex-basis: 50%; }
+        flex-basis: 46%; }
       header .fixed-top .navbar > nav#top-right-nav {
-        flex-basis: 20%; }
-        header .fixed-top .navbar > nav#top-right-nav ul li a {
-          display: flex;
-          flex-direction: row;
-          padding: 0 2px 10px 5px; }
-          header .fixed-top .navbar > nav#top-right-nav ul li a div {
-            font-size: 10px;
+        flex-basis: 23%; }
+        header .fixed-top .navbar > nav#top-right-nav > ul {
+          justify-content: flex-end; }
+          header .fixed-top .navbar > nav#top-right-nav > ul > li {
+            padding-left: 10px;
+            padding-right: 10px; }
+            header .fixed-top .navbar > nav#top-right-nav > ul > li a {
+              display: flex;
+              flex-direction: row;
+              padding: 0 2px 10px 5px; }
+              header .fixed-top .navbar > nav#top-right-nav > ul > li a div {
+                font-size: 10px;
+                color: #B72425;
+                min-height: 25px;
+                min-width: 25px; }
+                header .fixed-top .navbar > nav#top-right-nav > ul > li a div.btn-icon {
+                  padding: 0 4px; }
+                  header .fixed-top .navbar > nav#top-right-nav > ul > li a div.btn-icon.help {
+                    background: url("../../img/header/help.svg") no-repeat;
+                    background-size: 25px; }
+                  header .fixed-top .navbar > nav#top-right-nav > ul > li a div.btn-icon.login {
+                    background: url("../../img/header/user.png") no-repeat;
+                    background-size: 25px; }
+                header .fixed-top .navbar > nav#top-right-nav > ul > li a div.btn-label {
+                  padding: 4px 6px; }
+            header .fixed-top .navbar > nav#top-right-nav > ul > li .submenu {
+              font-size: 14.5px; }
+              header .fixed-top .navbar > nav#top-right-nav > ul > li .submenu li {
+                font-size: 14.3px; }
+              header .fixed-top .navbar > nav#top-right-nav > ul > li .submenu.to-left {
+                width: 160px;
+                position: absolute;
+                left: -65px; }
+                header .fixed-top .navbar > nav#top-right-nav > ul > li .submenu.to-left li {
+                  padding: 2px 0; }
+      header .fixed-top .navbar > nav .submenu {
+        width: 250px;
+        display: none;
+        position: absolute;
+        top: 75px;
+        padding: 0.5em;
+        border-top: 3px solid #B72425;
+        cursor: default; }
+        header .fixed-top .navbar > nav .submenu h5 {
+          font-family: Lato, sans-serif;
+          font-weight: 700;
+          text-transform: uppercase; }
+        header .fixed-top .navbar > nav .submenu ul {
+          list-style: none; }
+          header .fixed-top .navbar > nav .submenu ul li:hover, header .fixed-top .navbar > nav .submenu ul a:hover {
             color: #B72425;
-            min-height: 25px;
-            min-width: 25px; }
-            header .fixed-top .navbar > nav#top-right-nav ul li a div.btn-icon {
-              padding: 0 4px; }
-              header .fixed-top .navbar > nav#top-right-nav ul li a div.btn-icon.help {
-                background: url("../../img/header/help.svg") no-repeat;
-                background-size: 25px; }
-              header .fixed-top .navbar > nav#top-right-nav ul li a div.btn-icon.login {
-                background: url("../../img/header/user.png") no-repeat;
-                background-size: 25px; }
-            header .fixed-top .navbar > nav#top-right-nav ul li a div.btn-label {
-              padding: 4px 6px; }
+            text-decoration: underline;
+            cursor: pointer; }
   header .video-container {
     height: calc(100vh - 75px);
     margin-top: 75px;
