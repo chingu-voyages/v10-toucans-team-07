@@ -227,7 +227,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 715px) {
+@media screen and (min-width: 770px) {
   main .accr-logos {
     display: block;
   }
