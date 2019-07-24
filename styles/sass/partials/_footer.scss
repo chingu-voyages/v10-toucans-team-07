@@ -65,8 +65,9 @@ footer {
 @media all and (max-width: 992px){
   footer{
     h5{
-      
+      position: relative;
     }
+
     hr{
       display: block;
     }
@@ -76,6 +77,9 @@ footer {
       font-size: 2em;
       font-family: 'Roboto Slab', serif;
       font-weight: 300;
+      position: absolute;
+      top: -5px;
+
 
 
     }
@@ -85,6 +89,10 @@ footer {
       font-size: 2em;
       font-family: 'Roboto Slab', serif;
       font-weight: 300;
+      position: absolute;
+      top: -5px;
+
+
 
 
     }
