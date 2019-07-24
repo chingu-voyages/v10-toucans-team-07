@@ -64,16 +64,27 @@ footer {
 
 @media all and (max-width: 992px){
   footer{
+    h5{
+      
+    }
     hr{
       display: block;
     }
     a:not(.collapsed) > .iconColl::before{
-       content:"\2796";
+      content:"\2212";
+      color:  #5D5D5D;
+      font-size: 2em;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 300;
 
 
     }
     .collapsed > .iconColl::before{
-      content:"\2795";
+      content:"\002B";
+      color: #5D5D5D;
+      font-size: 2em;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 300;
 
 
     }
