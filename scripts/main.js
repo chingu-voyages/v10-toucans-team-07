@@ -8,3 +8,9 @@ $('.nav-tabs a').on('click', function(e) {
     $(this).parent().addClass('active');
     $(this).tab('show');
 });
+
+//  Rellax.js lib
+var rellax = new Rellax(".rellax");
+
+// Adding Parallax to floating card element above 1200px width
+let floating_card = document.querySelector('.floating-card');

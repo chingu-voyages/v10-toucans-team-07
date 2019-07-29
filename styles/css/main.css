@@ -200,5 +200,426 @@ footer {
 
   small {
     margin-left: 0 !important; } }
+main {
+  letter-spacing: 0.016rem; }
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 46px; }
+
+ul {
+  list-style: none; }
+
+@media screen and (min-width: 360px) {
+  main {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    line-break: 1.6em; }
+    main .notebook-image {
+      background: no-repeat url("/img/main/images/HP_notebooksPen_mobile_300x341px.jpg");
+      width: 400px;
+      height: 400px; }
+    main .flexpath-title,
+    main .title-container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 2em 0; }
+      main .flexpath-title p,
+      main .title-container p {
+        padding-bottom: 1em; }
+      main .flexpath-title .red-button:hover,
+      main .title-container .red-button:hover {
+        background-color: gainsboro;
+        cursor: pointer; }
+      main .flexpath-title .red-button,
+      main .title-container .red-button {
+        background-color: white;
+        padding: 0.5em 0;
+        font-size: 18px;
+        font-weight: bold;
+        border: 1px solid #b62025;
+        width: 100%; }
+        main .flexpath-title .red-button .red-link,
+        main .title-container .red-button .red-link {
+          color: #b62025;
+          text-decoration: none; }
+      main .flexpath-title .banana-desktop,
+      main .title-container .banana-desktop {
+        display: none; }
+    main .coffee-img {
+      margin-left: 6em;
+      height: 14rem;
+      padding-top: 1.4em; }
+
+  .red-line {
+    background-color: #ca0101;
+    width: 65px;
+    height: 5px;
+    margin-left: 0.1em;
+    margin-bottom: 1em; }
+
+  .degrees {
+    padding-top: 2em;
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: column; }
+    .degrees .degrees-stats {
+      padding-top: 2.5em; }
+      .degrees .degrees-stats h1 {
+        display: inline-block;
+        color: #b62025;
+        font-weight: 400;
+        line-height: 5px;
+        font-size: 2em;
+        padding-bottom: 0.3em; }
+      .degrees .degrees-stats .stats-perc {
+        color: #b62025;
+        font-weight: 400;
+        line-height: 5px;
+        font-size: 2em; }
+      .degrees .degrees-stats .italics {
+        font-style: italic;
+        font-weight: 100;
+        font-size: 0.75em; }
+      .degrees .degrees-stats .top-stats {
+        padding-bottom: 2.5em; }
+        .degrees .degrees-stats .top-stats p {
+          font-size: 17px;
+          font-weight: 700; }
+      .degrees .degrees-stats .bottom-stats {
+        padding-bottom: 2em; }
+      .degrees .degrees-stats p {
+        line-height: 26px;
+        font-size: 17px;
+        font-weight: 700;
+        margin: 0 !important;
+        padding-bottom: 0.5em; }
+
+  .floating-card {
+    padding-top: 2em; }
+    .floating-card h1 {
+      color: #262626; }
+
+  .bus-pic-desktop {
+    display: none; }
+
+  .bus-pic {
+    height: 23em;
+    width: 100%;
+    object-fit: cover;
+    object-position: 100% 0; }
+
+  .fadein-carousel-desktop {
+    display: none; }
+
+  .fadein-carousel {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    overflow: hidden; }
+    .fadein-carousel .fadein {
+      padding-top: 2em;
+      height: 7.5em;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      animation: slideshow 14s linear infinite; }
+      .fadein-carousel .fadein img {
+        padding: 0 5em 0 1em;
+        margin: 0;
+        height: 100%; }
+  @keyframes slideshow {
+    0% {
+      transform: translateX(0%); }
+    100% {
+      transform: translateX(-100%); } }
+  .accr-title {
+    padding-top: 1.4em;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 0.4em; }
+    .accr-title h5 {
+      font-weight: bold;
+      padding-bottom: 0.2em; }
+    .accr-title p {
+      line-height: 2em;
+      font-size: 0.9em; }
+
+  .accr-information {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 3.5em; }
+    .accr-information h5 {
+      font-size: 0.9em; }
+      .accr-information h5 a {
+        color: #b62025; }
+    .accr-information p {
+      text-align: center;
+      line-height: 2em;
+      font-size: 13px;
+      font-style: italic; }
+      .accr-information p a {
+        color: #b62025;
+        font-size: 12px; } }
+@media screen and (min-width: 770px) {
+  main .accr-logos {
+    display: block; }
+  main .section-one {
+    display: flex;
+    flex-wrap: wrap; }
+    main .section-one .notebook-container {
+      width: 55%; }
+      main .section-one .notebook-container .notebook-image {
+        background: no-repeat url(/img/main/images/HP_notebooksPen_desktop_618x972px.jpg);
+        width: 90%;
+        height: 100%;
+        background-size: contain; }
+    main .section-one .flexpath-title {
+      padding-top: 14em;
+      width: 45%;
+      margin-left: auto; }
+      main .section-one .flexpath-title .title {
+        width: 65%; }
+        main .section-one .flexpath-title .title h1 {
+          text-align: left; }
+        main .section-one .flexpath-title .title .red-line {
+          display: none; }
+        main .section-one .flexpath-title .title .red-button {
+          padding: 0.7em 1em;
+          line-height: 1.6em; }
+          main .section-one .flexpath-title .title .red-button a {
+            font-size: 1.2em; }
+    main .section-one .coffee-img {
+      margin: 0 auto;
+      width: 100%; }
+      main .section-one .coffee-img .banana-mobile {
+        margin-left: 70%; }
+    main .section-one .degrees {
+      display: flex;
+      flex-direction: row;
+      width: 80%; }
+      main .section-one .degrees .degrees-title {
+        padding-left: 2em; }
+        main .section-one .degrees .degrees-title .title {
+          width: 75%; }
+          main .section-one .degrees .degrees-title .title h1 {
+            font-size: 1.9em; }
+          main .section-one .degrees .degrees-title .title p {
+            line-height: 1.9em;
+            word-spacing: .3em; }
+  main .section-two {
+    position: relative; }
+    main .section-two .svg-ampersand {
+      display: none; }
+    main .section-two .floating-card {
+      width: 720px;
+      height: 520px;
+      background-color: white;
+      word-spacing: 0.2em;
+      line-height: 1.9em;
+      position: absolute;
+      top: auto 30%;
+      left: 0;
+      right: 0;
+      bottom: 25px;
+      margin: auto; }
+      main .section-two .floating-card .card-inner {
+        width: 80%;
+        margin: 0 auto; }
+      main .section-two .floating-card .red-button {
+        width: 70%;
+        font-size: 1.1em;
+        font-weight: 600; }
+    main .section-two .bus-pic-desktop {
+      display: none; }
+    main .section-two .bus-pic {
+      padding-top: 4em;
+      height: 100%; }
+  main .section-three {
+    width: 90%; }
+    main .section-three .accr-title {
+      width: 60%; }
+      main .section-three .accr-title h5 {
+        line-height: 1.7em; }
+    main .section-three .accr-information {
+      width: 65%; } }
+@media screen and (min-width: 992px) {
+  main .section-one {
+    display: flex;
+    flex-wrap: wrap; }
+    main .section-one .notebook-container {
+      padding-top: 10em;
+      width: 60%;
+      height: 1150px; }
+      main .section-one .notebook-container .notebook-image {
+        background: no-repeat url("/img/main/images/HP_notebooksPen_desktop_618x972px.jpg");
+        width: 100%;
+        height: 100%;
+        background-size: contain; }
+    main .section-one .flexpath-title {
+      width: 38%;
+      padding-right: 4em; }
+      main .section-one .flexpath-title .title {
+        width: 100%;
+        margin: 0;
+        padding: 0; }
+        main .section-one .flexpath-title .title h1 {
+          width: 85%;
+          font-family: "lato-bold", sans-serif;
+          font-weight: 700; }
+    main .section-one .coffee-img {
+      height: 0;
+      position: relative;
+      top: -300px;
+      right: -50px;
+      padding: 0;
+      margin: 0; }
+  main .section-two {
+    padding-top: 5em; }
+    main .section-two .floating-card {
+      width: 720px;
+      height: 520px;
+      background-color: white;
+      word-spacing: 0.2em;
+      line-height: 1.9em;
+      position: absolute;
+      top: auto 30%;
+      left: 0;
+      right: 0;
+      bottom: 25px;
+      margin: auto; }
+      main .section-two .floating-card .card-inner {
+        width: 80%;
+        margin: 0 auto; }
+      main .section-two .floating-card .red-button {
+        width: 70%;
+        font-size: 1.1em;
+        font-weight: 600; }
+    main .section-two .bus-pic-desktop {
+      display: block;
+      object-fit: contain;
+      width: 100%; }
+    main .section-two .bus-pic {
+      display: none; }
+  main .section-three .fadein-carousel {
+    display: none; }
+  main .section-three .fadein-carousel-desktop {
+    padding-top: 2em;
+    display: block;
+    width: 700px;
+    margin: 0 auto; }
+    main .section-three .fadein-carousel-desktop .fadein-desktop {
+      display: flex;
+      justify-content: space-around; }
+      main .section-three .fadein-carousel-desktop .fadein-desktop img {
+        height: 110px; } }
+@media screen and (min-width: 1200px) {
+  main .section-one .notebook-container {
+    height: 1350px;
+    width: 55%; }
+  main .section-one .flexpath-title {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding-right: 0; }
+    main .section-one .flexpath-title .title {
+      width: 85%;
+      padding: 2em; }
+      main .section-one .flexpath-title .title .red-line {
+        display: block; }
+      main .section-one .flexpath-title .title h1 {
+        font-size: 2.2em;
+        line-height: 1.2em; }
+      main .section-one .flexpath-title .title p {
+        width: 90%;
+        line-height: 1.8em;
+        font-size: 1.1em; }
+      main .section-one .flexpath-title .title .red-button {
+        padding: 0.7em;
+        width: 72%; }
+    main .section-one .flexpath-title .banana-desktop {
+      padding-top: 2em;
+      display: block;
+      align-self: flex-end;
+      width: 50%; }
+  main .section-one .coffee-img .banana-mobile {
+    display: none; }
+  main .section-one .degrees {
+    width: 75%; }
+    main .section-one .degrees .degrees-title {
+      width: 60%; }
+    main .section-one .degrees .degrees-stats {
+      width: 30%; }
+      main .section-one .degrees .degrees-stats .top-stats {
+        width: 90%; }
+      main .section-one .degrees .degrees-stats .bottom-stats {
+        width: 90%; }
+  main .section-two .floating-card {
+    width: 600px;
+    height: 580px;
+    line-height: 1.8em;
+    left: -27em; }
+    main .section-two .floating-card .svg-ampersand {
+      display: block;
+      background: no-repeat url(/img/main/images/ampersand.svg);
+      height: 515px;
+      width: 100%;
+      position: absolute;
+      left: -70px;
+      top: -100px; }
+    main .section-two .floating-card .card-inner {
+      width: 75%;
+      padding-left: 1em;
+      padding-top: 3em; }
+      main .section-two .floating-card .card-inner p {
+        padding: 0;
+        font-size: 1em;
+        width: 90%; }
+      main .section-two .floating-card .card-inner h1 {
+        font-weight: bold;
+        font-size: 1.7em; }
+      main .section-two .floating-card .card-inner .red-button {
+        font-size: 1em;
+        width: 60%; } }
+@media screen and (min-width: 1500px) {
+  main .section-one .flexpath-title .title {
+    width: 60%;
+    padding: 2em; }
+  main .section-one .degrees {
+    padding-left: 25em;
+    width: 100%; }
+    main .section-one .degrees .degrees-title .title {
+      padding: 0 1em;
+      width: 80%; }
+      main .section-one .degrees .degrees-title .title h1 {
+        width: 85%; }
+    main .section-one .degrees .degrees-title p {
+      font-size: 1.1em;
+      line-height: 5em; }
+    main .section-one .degrees .degrees-stats {
+      padding-left: 2em;
+      width: 50%;
+      font-size: 1.1em; }
+      main .section-one .degrees .degrees-stats .top-stats {
+        width: 40%; }
+      main .section-one .degrees .degrees-stats .bottom-stats {
+        width: 50%; }
+  main .section-two .floating-card {
+    width: 600px;
+    height: 620px;
+    line-height: 1.8em;
+    left: -27em;
+    bottom: 300px; } }
+@media screen and (min-width: 1700px) {
+  main .section-two .floating-card {
+    width: 600px;
+    height: 620px;
+    bottom: 470px; } }
 
 /*# sourceMappingURL=main.css.map */
