@@ -162,6 +162,10 @@ header {
 					cursor: default;
 					box-shadow: 0 8px 20px -15px rgba(0, 0, 0, 0.5);
 
+					* {
+						color: #404040;
+					}
+
 					h5 {
 						font-family: Lato, sans-serif;
 						font-weight: 700;
@@ -222,7 +226,6 @@ header {
 								}
 
 								&:hover {
-									cursor: pointer;
 									background: $red;
 
 									h5 {
@@ -232,10 +235,19 @@ header {
 
 								&.active {
 									background: $red;
+									cursor: default;
 
 									h5 {
 										color: #ffffff;
 									}
+								}
+							}
+						}
+
+						.tab-content {
+							.tab-pane {
+								& > h5 {
+									border-bottom: 1px solid #E5E5E5;
 								}
 							}
 						}

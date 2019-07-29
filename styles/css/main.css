@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400&display=swap");
 header {
   height: calc(100vh - 75px);
   box-sizing: border-box;
@@ -101,6 +101,8 @@ header {
         border-top: 3px solid #B72425;
         cursor: default;
         box-shadow: 0 8px 20px -15px rgba(0, 0, 0, 0.5); }
+        header .fixed-top .navbar > nav .submenu * {
+          color: #404040; }
         header .fixed-top .navbar > nav .submenu h5 {
           font-family: Lato, sans-serif;
           font-weight: 700;
@@ -142,14 +144,16 @@ header {
                 width: 80%;
                 height: 100%; }
               header .fixed-top .navbar > nav .submenu.wide .course-overview li:hover {
-                cursor: pointer;
                 background: #B72425; }
                 header .fixed-top .navbar > nav .submenu.wide .course-overview li:hover h5 {
                   color: #ffffff; }
               header .fixed-top .navbar > nav .submenu.wide .course-overview li.active {
-                background: #B72425; }
+                background: #B72425;
+                cursor: default; }
                 header .fixed-top .navbar > nav .submenu.wide .course-overview li.active h5 {
                   color: #ffffff; }
+          header .fixed-top .navbar > nav .submenu.wide .tab-content .tab-pane > h5 {
+            border-bottom: 1px solid #E5E5E5; }
   header .video-container {
     height: calc(100vh - 75px);
     margin-top: 75px;
