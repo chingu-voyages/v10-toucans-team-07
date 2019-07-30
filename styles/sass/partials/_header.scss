@@ -23,9 +23,13 @@ header {
 		height: 100%;
 	}
 
+	a {
+		font-family: Lato, sans-serif;
+	}
+
 	.fixed-top {
 		box-shadow: 0 8px 50px -20px rgba(0, 0, 0, 0.75);
-		z-index: 10;
+		background-color: #ffffff;
 
 		.navbar {
 			width: 1110px; /*82%*/
@@ -162,6 +166,10 @@ header {
 					cursor: default;
 					box-shadow: 0 8px 20px -15px rgba(0, 0, 0, 0.5);
 
+					&.visible {
+						display: block;
+					}
+
 					* {
 						color: #404040;
 					}
@@ -245,9 +253,33 @@ header {
 						}
 
 						.tab-content {
+							.course-overview {
+								height: 100%;
+							}
+						
 							.tab-pane {
+								.co-column {
+									flex-basis: 32%;
+									padding-right: 5px;
+								}
+								
 								& > h5 {
 									border-bottom: 1px solid #E5E5E5;
+									padding: 10px 0 !important;
+									flex-basis: 100%;
+									margin-bottom: 10px;
+								}
+
+								a {
+									box-sizing: border-box;
+									min-height: 25px;
+									display: block;
+									font-size: 10.5pt;
+									margin: 0;
+
+									h5 {
+										padding: 10px 0 5px;
+									}
 								}
 							}
 						}

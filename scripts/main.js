@@ -2,12 +2,22 @@ const allTabs = $('.course-overview > li');
 
 $('.nav-tabs a').on('click', function(e) {
     e.stopPropagation();
+    $(this).tab('show');
     $.each(allTabs, function(t) {
-        allTabs.eq(t).removeClass('active');
+        if (allTabs.eq(t).hasClass('active')) {
+            allTabs.eq(t).removeClass('active');
+        }
     });
     $(this).parent().addClass('active');
-    $(this).tab('show');
 });
+
+const dropdowns = $('.dropdown');
+dropdowns.on('click', function() {
+    $(this).children('.submenu').toggleClass('visible');
+}).on('focusout', function() {
+    $(this).children('.submenu').removeClass('visible');
+});
+
 
 //  Rellax.js lib
 var rellax = new Rellax(".rellax");

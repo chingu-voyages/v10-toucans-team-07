@@ -13,9 +13,11 @@ header {
   header ul,
   header li {
     height: 100%; }
+  header a {
+    font-family: Lato, sans-serif; }
   header .fixed-top {
     box-shadow: 0 8px 50px -20px rgba(0, 0, 0, 0.75);
-    z-index: 10; }
+    background-color: #ffffff; }
     header .fixed-top .navbar {
       width: 1110px;
       /*82%*/
@@ -101,6 +103,8 @@ header {
         border-top: 3px solid #B72425;
         cursor: default;
         box-shadow: 0 8px 20px -15px rgba(0, 0, 0, 0.5); }
+        header .fixed-top .navbar > nav .submenu.visible {
+          display: block; }
         header .fixed-top .navbar > nav .submenu * {
           color: #404040; }
         header .fixed-top .navbar > nav .submenu h5 {
@@ -152,8 +156,24 @@ header {
                 cursor: default; }
                 header .fixed-top .navbar > nav .submenu.wide .course-overview li.active h5 {
                   color: #ffffff; }
+          header .fixed-top .navbar > nav .submenu.wide .tab-content .course-overview {
+            height: 100%; }
+          header .fixed-top .navbar > nav .submenu.wide .tab-content .tab-pane .co-column {
+            flex-basis: 32%;
+            padding-right: 5px; }
           header .fixed-top .navbar > nav .submenu.wide .tab-content .tab-pane > h5 {
-            border-bottom: 1px solid #E5E5E5; }
+            border-bottom: 1px solid #E5E5E5;
+            padding: 10px 0 !important;
+            flex-basis: 100%;
+            margin-bottom: 10px; }
+          header .fixed-top .navbar > nav .submenu.wide .tab-content .tab-pane a {
+            box-sizing: border-box;
+            min-height: 25px;
+            display: block;
+            font-size: 10.5pt;
+            margin: 0; }
+            header .fixed-top .navbar > nav .submenu.wide .tab-content .tab-pane a h5 {
+              padding: 10px 0 5px; }
   header .video-container {
     height: calc(100vh - 75px);
     margin-top: 75px;
