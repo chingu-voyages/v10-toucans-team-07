@@ -1,8 +1,23 @@
 const allTabs = $('.course-overview > li');
+const submenus = $('.tab-content > div');
+
+// had to rewrite Bootstrap's tab function because it was inconsistent
+const activateTab = function(link) {
+    let linkId = link.attr('id');
+    $.each(submenus, function(t) {
+        if (submenus.eq(t).hasClass('active')) {
+            submenus.eq(t).removeClass('active');
+        }
+        if (linkId === submenus.eq(t).attr('aria-labelledby')) {
+            submenus.eq(t).addClass('active');
+        }
+    });
+
+};
 
 $('.nav-tabs a').on('click', function(e) {
     e.stopPropagation();
-    $(this).tab('show');
+    activateTab($(this));
     $.each(allTabs, function(t) {
         if (allTabs.eq(t).hasClass('active')) {
             allTabs.eq(t).removeClass('active');

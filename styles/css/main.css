@@ -16,7 +16,7 @@ header {
   header a {
     font-family: Lato, sans-serif; }
   header .fixed-top {
-    box-shadow: 0 8px 50px -20px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     background-color: #ffffff; }
     header .fixed-top .navbar {
       width: 1110px;
@@ -102,7 +102,8 @@ header {
         padding: 0.75em;
         border-top: 3px solid #B72425;
         cursor: default;
-        box-shadow: 0 8px 20px -15px rgba(0, 0, 0, 0.5); }
+        box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.3);
+        background: #fff; }
         header .fixed-top .navbar > nav .submenu.visible {
           display: block; }
         header .fixed-top .navbar > nav .submenu * {
@@ -117,12 +118,12 @@ header {
           list-style: none; }
           header .fixed-top .navbar > nav .submenu ul li {
             font-size: 14.3px; }
-          header .fixed-top .navbar > nav .submenu ul a:hover {
-            color: #B72425;
-            text-decoration: underline;
-            cursor: pointer; }
-            header .fixed-top .navbar > nav .submenu ul a:hover > h5 {
-              color: #B72425; }
+        header .fixed-top .navbar > nav .submenu a:hover {
+          color: #B72425;
+          text-decoration: underline;
+          cursor: pointer; }
+          header .fixed-top .navbar > nav .submenu a:hover > h5 {
+            color: #B72425; }
         header .fixed-top .navbar > nav .submenu.wide {
           width: 70em;
           left: calc(100% - 30.5em);
@@ -147,20 +148,22 @@ header {
                 padding: 0.3em;
                 width: 80%;
                 height: 100%; }
-              header .fixed-top .navbar > nav .submenu.wide .course-overview li:hover {
-                background: #B72425; }
-                header .fixed-top .navbar > nav .submenu.wide .course-overview li:hover h5 {
-                  color: #ffffff; }
-              header .fixed-top .navbar > nav .submenu.wide .course-overview li.active {
+              header .fixed-top .navbar > nav .submenu.wide .course-overview li.active, header .fixed-top .navbar > nav .submenu.wide .course-overview li:hover {
                 background: #B72425;
                 cursor: default; }
-                header .fixed-top .navbar > nav .submenu.wide .course-overview li.active h5 {
+                header .fixed-top .navbar > nav .submenu.wide .course-overview li.active h5, header .fixed-top .navbar > nav .submenu.wide .course-overview li:hover h5 {
                   color: #ffffff; }
+                header .fixed-top .navbar > nav .submenu.wide .course-overview li.active::after, header .fixed-top .navbar > nav .submenu.wide .course-overview li:hover::after {
+                  content: '';
+                  position: absolute;
+                  border-left: 22px #B72425 solid;
+                  border-top: 23.5px solid transparent;
+                  border-bottom: 23.5px solid transparent; }
           header .fixed-top .navbar > nav .submenu.wide .tab-content .course-overview {
             height: 100%; }
           header .fixed-top .navbar > nav .submenu.wide .tab-content .tab-pane .co-column {
-            flex-basis: 32%;
-            padding-right: 5px; }
+            flex-basis: 33%;
+            padding-right: 3px; }
           header .fixed-top .navbar > nav .submenu.wide .tab-content .tab-pane > h5 {
             border-bottom: 1px solid #E5E5E5;
             padding: 10px 0 !important;

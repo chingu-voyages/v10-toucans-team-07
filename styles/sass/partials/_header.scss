@@ -28,7 +28,7 @@ header {
 	}
 
 	.fixed-top {
-		box-shadow: 0 8px 50px -20px rgba(0, 0, 0, 0.75);
+		box-shadow: 0 4px 8px  rgba(0, 0, 0, 0.3);
 		background-color: #ffffff;
 
 		.navbar {
@@ -164,7 +164,8 @@ header {
 					padding: 0.75em;
 					border-top: $red-border;
 					cursor: default;
-					box-shadow: 0 8px 20px -15px rgba(0, 0, 0, 0.5);
+					box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.3);
+					background: #fff;
 
 					&.visible {
 						display: block;
@@ -188,16 +189,16 @@ header {
 						li {
 							font-size: 14.3px;
 						}
+					}
 
-						a:hover {
-							& > h5 {
-								color: $red;
-							}
-
+					a:hover {
+						& > h5 {
 							color: $red;
-							text-decoration: underline;
-							cursor: pointer;
 						}
+
+						color: $red;
+						text-decoration: underline;
+						cursor: pointer;
 					}
 
 					&.wide {
@@ -233,20 +234,20 @@ header {
 									height: 100%;
 								}
 
-								&:hover {
-									background: $red;
-
-									h5 {
-										color: #ffffff;
-									}
-								}
-
-								&.active {
+								&.active, &:hover {
 									background: $red;
 									cursor: default;
 
 									h5 {
 										color: #ffffff;
+									}
+
+									&::after {
+										content: '';
+										position: absolute;
+										border-left: 22px $red solid;
+										border-top: 23.5px solid transparent;
+										border-bottom: 23.5px solid transparent;
 									}
 								}
 							}
@@ -259,8 +260,8 @@ header {
 						
 							.tab-pane {
 								.co-column {
-									flex-basis: 32%;
-									padding-right: 5px;
+									flex-basis: 33%;
+									padding-right: 3px;
 								}
 								
 								& > h5 {
