@@ -1,7 +1,2 @@
 bootstrap/*
-<<<<<<< HEAD
-styles/sass/**
-*css.map
-=======
 styles/.sass-cache
->>>>>>> dev

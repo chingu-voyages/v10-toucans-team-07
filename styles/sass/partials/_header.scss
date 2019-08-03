@@ -23,9 +23,13 @@ header {
 		height: 100%;
 	}
 
+	a {
+		font-family: Lato, sans-serif;
+	}
+
 	.fixed-top {
-		box-shadow: 0 8px 50px -20px rgba(0, 0, 0, 0.75);
-		z-index: 10;
+		box-shadow: 0 4px 8px  rgba(0, 0, 0, 0.3);
+		background-color: #ffffff;
 
 		.navbar {
 			width: 1110px; /*82%*/
@@ -98,7 +102,7 @@ header {
 							padding-left: 10px;
 							padding-right: 10px;
 
-							a {
+							& > a {
 								display: flex;
 								flex-direction: row;
 								padding: 0 2px 10px 5px;
@@ -133,6 +137,11 @@ header {
 							.submenu {
 								font-size: 14.5px;
 
+								h5 {
+									font-size: 15px;
+									padding: 0.75em 0 1em;
+								}
+								
 								li {
 									font-size: 14.3px;
 								}
@@ -141,10 +150,6 @@ header {
 									width: 160px;
 									position: absolute;
 									left: -65px;
-
-									li {
-										padding: 2px 0;
-									}
 								}
 							}
 						}
@@ -152,27 +157,132 @@ header {
 				}
 
 				.submenu {
-					width: 250px;
+					width: 295px;
 					display: none;
 					position: absolute;
 					top: $header-height;
-					padding: 0.5em;
+					padding: 0.75em;
 					border-top: $red-border;
 					cursor: default;
+					box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.3);
+					background: #fff;
+
+					&.visible {
+						display: block;
+					}
+
+					* {
+						color: #404040;
+					}
 
 					h5 {
 						font-family: Lato, sans-serif;
 						font-weight: 700;
 						text-transform: uppercase;
+						font-size: 14.3px;
+						color: $black;
 					}
 
 					ul {
 						list-style: none;
 
-						li:hover, a:hover {
+						li {
+							font-size: 14.3px;
+						}
+					}
+
+					a:hover {
+						& > h5 {
 							color: $red;
-							text-decoration: underline;
-							cursor: pointer;
+						}
+
+						color: $red;
+						text-decoration: underline;
+						cursor: pointer;
+					}
+
+					&.wide {
+						width: 70em;
+						left: calc(100% - 30.5em);
+						padding: 0;
+
+						.course-overview {
+							background: #F5F5F5;
+
+							.v-separator {
+								width: 80%;
+								background: #DDDDDD;
+								height: 1px;
+							}
+							
+							li {
+								height: 3.25em;
+								width: 100%;
+								padding: 0;
+								margin: 0;
+
+								a {
+									display: inline-block;
+									height: 100%;
+									width: 100%;
+								}
+
+								h5 {
+									text-align: center;
+									padding: 0.3em;
+									width: 80%;
+									height: 100%;
+								}
+
+								&.active, &:hover {
+									background: $red;
+									cursor: default;
+
+									h5 {
+										color: #ffffff;
+									}
+
+									&::after {
+										content: '';
+										position: absolute;
+										border-left: 22px $red solid;
+										border-top: 23.5px solid transparent;
+										border-bottom: 23.5px solid transparent;
+									}
+								}
+							}
+						}
+
+						.tab-content {
+							.course-overview {
+								height: 100%;
+							}
+						
+							.tab-pane {
+								.co-column {
+									flex-basis: 33%;
+									padding-right: 3px;
+								}
+								
+								& > h5 {
+									border-bottom: 1px solid #E5E5E5;
+									padding: 10px 0 !important;
+									flex-basis: 100%;
+									margin-bottom: 10px;
+								}
+
+								a {
+									box-sizing: border-box;
+									min-height: 25px;
+									display: block;
+									font-size: 10.5pt;
+									margin: 0;
+
+									h5 {
+										padding: 10px 0 5px;
+									}
+								}
+							}
 						}
 					}
 				}
