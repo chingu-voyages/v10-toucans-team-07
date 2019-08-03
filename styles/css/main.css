@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400&display=swap");
 header {
   height: calc(100vh - 75px);
   box-sizing: border-box;
@@ -207,7 +208,8 @@ footer {
   footer .foll-us {
     margin: 10px 0 10px 0px; }
   footer .f-icon a {
-    padding: 10px; }
+    padding: 10px;
+    margin-right: 5px; }
     footer .f-icon a:first-child {
       padding-left: 0; }
   footer .inLine li {
@@ -218,8 +220,26 @@ footer {
     margin-left: 15px; }
 
 @media all and (max-width: 992px) {
+  footer h5 {
+    position: relative; }
   footer hr {
     display: block; }
+  footer a:not(.collapsed) > .iconColl::before {
+    content: "\2212";
+    color: #5D5D5D;
+    font-size: 2em;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    position: absolute;
+    top: -5px; }
+  footer .collapsed > .iconColl::before {
+    content: "\002B";
+    color: #5D5D5D;
+    font-size: 2em;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    position: absolute;
+    top: -5px; }
 
   small {
     margin-left: 0 !important; } }

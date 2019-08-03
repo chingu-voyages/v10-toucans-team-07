@@ -41,6 +41,7 @@ footer {
   .f-icon{
     a{
       padding: 10px;
+      margin-right: 5px;
       &:first-child{
         padding-left: 0;
     }
@@ -63,8 +64,30 @@ footer {
 
 @media all and (max-width: 992px){
   footer{
+    h5{
+      position: relative;
+    }
+
     hr{
       display: block;
+    }
+    a:not(.collapsed) > .iconColl::before{
+      content:"\2212";
+      color:  #5D5D5D;
+      font-size: 2em;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 300;
+      position: absolute;
+      top: -5px;
+    }
+    .collapsed > .iconColl::before{
+      content:"\002B";
+      color: #5D5D5D;
+      font-size: 2em;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 300;
+      position: absolute;
+      top: -5px;
     }
   }
   small{
