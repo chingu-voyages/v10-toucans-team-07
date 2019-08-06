@@ -4,6 +4,12 @@ $red-border: 3px solid $red;
 $black: #262626;
 $icon-height: 25px;
 
+@mixin setIcon($link) {
+	background: url('#{$link}') no-repeat;
+	background-size: 20px;
+	background-position: center;
+}
+
 header {
 	height: calc(100vh - #{$header-height});
 	box-sizing: border-box;
@@ -140,10 +146,63 @@ header {
 									font-size: 14.3px;
 								}
 
+								a {
+									display: flex;
+									flex-direction: row;
+
+									&:hover {
+										.calendar {
+											@include setIcon('../../img/header/r_calendar.png');
+										}
+	
+										.email {
+											@include setIcon('../../img/header/r_envelope.png');
+										}
+	
+										.notepad {
+											@include setIcon('../../img/header/r_notepad.png');
+										}
+	
+										.telephone {
+											@include setIcon('../../img/header/r_telephone.png');
+										}
+	
+										.chat {
+											@include setIcon('../../img/header/r_speech.png');
+										}
+									}
+								}
+
 								&.to-left {
 									width: 170px;
 									position: absolute;
 									left: -65px;
+								}
+
+								.link-icon {
+									width: 20px;
+									height: 25px;
+									margin-right: 10px;
+
+									&.calendar {
+										@include setIcon('../../img/header/b_calendar.png');
+									}
+
+									&.email {
+										@include setIcon('../../img/header/b_envelope.png');
+									}
+
+									&.notepad {
+										@include setIcon('../../img/header/b_notepad.png');
+									}
+
+									&.telephone {
+										@include setIcon('../../img/header/b_telephone.png');
+									}
+
+									&.chat {
+										@include setIcon('../../img/header/b_speech.png');
+									}
 								}
 							}
 						}

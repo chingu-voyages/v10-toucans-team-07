@@ -1,6 +1,8 @@
 $(document).ready(function() {
     let allTabs = $('.course-overview > li');
     let submenus = $('.tab-content > div');
+    let dropdowns = $('.dropdown');
+    let navTabLinks = $('.nav-tabs a');
 
     // Had to rewrite Bootstrap's tab function because it was inconsistent
     const activateTab = function(link) {
@@ -30,20 +32,21 @@ $(document).ready(function() {
         $(this).parent().addClass('active');
     };
 
-    // $('.nav-tabs a').on('click', activateTabEvent);
+    navTabLinks.on('click', activateTabEvent);
 
 
     // --- Dropdown events ---
     let showDropdown = function() {
-        $(this).children('.submenu').toggleClass('visible');
+        $(this).children('.submenu').toggleClass('visible').focus();
     };
 
     let hideDropdown = function() {
         $(this).children('.submenu').removeClass('visible');
     };
 
-    let dropdowns = $('.dropdown');
-    dropdowns.on('click', showDropdown).on('focusout', hideDropdown);
+    dropdowns.on('click', showDropdown).focusout(function() {
+        window.setTimeout(hideDropdown, 100);
+    });
 
     
     // --- Change appearance when width <= 975 ---
@@ -62,9 +65,21 @@ $(document).ready(function() {
         return menu;
     }
 
+    function addNewEvents(menu, tabs = false) {
+        $(menu).find('.dropdown').each(function(index) {
+            $(this).on('click', showDropdown).focusout(function() {
+                window.setTimeout(hideDropdown, 100);
+            });
+        });
+
+        if (tabs) {
+            $('.nav-tabs a').on('click', activateTabEvent);
+        }
+    }
+
     function rebootEvents() {
-        $('.dropdown').on('click', showDropdown).on('focusout', hideDropdown);
-        $('.nav-tabs a').on('click', activateTabEvent);
+        dropdowns = $('.dropdown');
+        navTabLinks = $('.nav-tabs a');
     }
 
     function adjustHeader() {
@@ -80,12 +95,14 @@ $(document).ready(function() {
 
                 $(headerNavbar).append(newMenu);
                 $(newMenu).append(topMiddleNav);
+                addNewEvents(newMenu);
             }
         } else {
             if ( $('#newMenu').length > 0 ) {
                 let menu = $('#newMenu');
                 menu.remove();
                 topMiddleNav.insertBefore($('#top-right-nav'));
+                addNewEvents(topMiddleNav, true);
             }
         }
 

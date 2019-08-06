@@ -86,10 +86,57 @@ header {
                 padding: 0.75em 0 1em; }
               header .fixed-top .navbar > nav#top-right-nav > ul > li .submenu li {
                 font-size: 14.3px; }
+              header .fixed-top .navbar > nav#top-right-nav > ul > li .submenu a {
+                display: flex;
+                flex-direction: row; }
+                header .fixed-top .navbar > nav#top-right-nav > ul > li .submenu a:hover .calendar {
+                  background: url("../../img/header/r_calendar.png") no-repeat;
+                  background-size: 20px;
+                  background-position: center; }
+                header .fixed-top .navbar > nav#top-right-nav > ul > li .submenu a:hover .email {
+                  background: url("../../img/header/r_envelope.png") no-repeat;
+                  background-size: 20px;
+                  background-position: center; }
+                header .fixed-top .navbar > nav#top-right-nav > ul > li .submenu a:hover .notepad {
+                  background: url("../../img/header/r_notepad.png") no-repeat;
+                  background-size: 20px;
+                  background-position: center; }
+                header .fixed-top .navbar > nav#top-right-nav > ul > li .submenu a:hover .telephone {
+                  background: url("../../img/header/r_telephone.png") no-repeat;
+                  background-size: 20px;
+                  background-position: center; }
+                header .fixed-top .navbar > nav#top-right-nav > ul > li .submenu a:hover .chat {
+                  background: url("../../img/header/r_speech.png") no-repeat;
+                  background-size: 20px;
+                  background-position: center; }
               header .fixed-top .navbar > nav#top-right-nav > ul > li .submenu.to-left {
                 width: 170px;
                 position: absolute;
                 left: -65px; }
+              header .fixed-top .navbar > nav#top-right-nav > ul > li .submenu .link-icon {
+                width: 20px;
+                height: 25px;
+                margin-right: 10px; }
+                header .fixed-top .navbar > nav#top-right-nav > ul > li .submenu .link-icon.calendar {
+                  background: url("../../img/header/b_calendar.png") no-repeat;
+                  background-size: 20px;
+                  background-position: center; }
+                header .fixed-top .navbar > nav#top-right-nav > ul > li .submenu .link-icon.email {
+                  background: url("../../img/header/b_envelope.png") no-repeat;
+                  background-size: 20px;
+                  background-position: center; }
+                header .fixed-top .navbar > nav#top-right-nav > ul > li .submenu .link-icon.notepad {
+                  background: url("../../img/header/b_notepad.png") no-repeat;
+                  background-size: 20px;
+                  background-position: center; }
+                header .fixed-top .navbar > nav#top-right-nav > ul > li .submenu .link-icon.telephone {
+                  background: url("../../img/header/b_telephone.png") no-repeat;
+                  background-size: 20px;
+                  background-position: center; }
+                header .fixed-top .navbar > nav#top-right-nav > ul > li .submenu .link-icon.chat {
+                  background: url("../../img/header/b_speech.png") no-repeat;
+                  background-size: 20px;
+                  background-position: center; }
       header .fixed-top .navbar > nav .submenu {
         width: 305px;
         display: none;
