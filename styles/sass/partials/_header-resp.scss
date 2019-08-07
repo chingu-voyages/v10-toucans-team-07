@@ -58,10 +58,27 @@ $header-height-2: 90px;
             }
         }
     }
-}
 
-@media only screen and (max-width: 1000px) {
-    // her "and"
+    .video-text {
+        top: 33%;
+        left: 8%;
+        padding: 10px 20px;
+        width: 450px;
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 35px;
+            padding: 10px 0;
+        }
+
+        button {
+            padding: 10px 70px;
+        }
+    }
 }
 
 @media only screen and (max-width: 975px) {
@@ -194,6 +211,57 @@ $header-height-2: 90px;
                     background: #DDDDDD;
                 }
             }
+        }
+    }
+
+    .video-text {
+        top: 28%;
+        left: calc((100vw - 540px)/2);
+        padding: 20px 20px 35px;
+        max-width: 540px;
+
+        h1 {
+            font-size: 42px;
+            line-height: 40px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 27px;
+            padding: 20px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px 70px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .text-container {
+        height: 810px !important;
+    }
+
+    .video-text {
+        left: 0;
+        padding: 20px 20px 35px;
+        max-width: 540px;
+
+        h1 {
+            font-size: 42px;
+            line-height: 40px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 27px;
+            padding: 20px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
         }
     }
 }

@@ -1,5 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400&display=swap");
+body {
+  overflow-x: hidden; }
+
 header {
   height: calc(100vh - 75px);
   box-sizing: border-box;
@@ -222,10 +225,47 @@ header {
             margin: 0; }
             header .fixed-top .navbar > nav .submenu.wide .tab-content .tab-pane a h5 {
               padding: 10px 0 5px; }
-  header .video-container {
-    height: calc(100vh - 75px);
+  header video {
+    z-index: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); }
+  header .text-container {
     margin-top: 75px;
+    height: calc(100vh - 75px); }
+  header .video-text {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
     z-index: 1; }
+    header .video-text h1, header .video-text p, header .video-text a {
+      color: #ffffff; }
+    header .video-text h1 {
+      font-weight: 700;
+      font-family: Lato, sans-serif; }
+    header .video-text p {
+      font-weight: 400;
+      font-family: Lato, sans-serif; }
+    header .video-text button {
+      background-color: #B62025;
+      border: 0; }
+      header .video-text button a {
+        font-size: 20px;
+        height: auto;
+        width: auto; }
+      header .video-text button:hover {
+        text-align: center;
+        background-color: #8B181C; }
+        header .video-text button:hover a {
+          text-decoration: none; }
 
 @media only screen and (min-width: 1191px) {
   header .navbar {
@@ -244,7 +284,20 @@ header {
         header .navbar > nav ul .nav-item .dropdown-trigger.py-2 {
           padding-top: 0 !important; }
     header .navbar > nav#top-right-nav .red-btn {
-      margin-top: -5px; } }
+      margin-top: -5px; }
+  header .video-text {
+    top: 33%;
+    left: 8%;
+    padding: 10px 20px;
+    width: 450px; }
+    header .video-text h1 {
+      font-size: 50px; }
+    header .video-text p {
+      font-size: 20px;
+      line-height: 35px;
+      padding: 10px 0; }
+    header .video-text button {
+      padding: 10px 70px; } }
 footer {
   background-color: #f5f5f5;
   font-family: 'Lato', sans-serif; }
@@ -755,7 +808,21 @@ ul {
           .navbar > nav ul .nav-item.red-btn .btn-icon.login ~ .btn-label.py-2 {
             padding-top: 0 !important;
             padding-bottom: 0 !important;
-            width: 40px; } }
+            width: 40px; }
+
+  .video-text {
+    top: 33%;
+    left: 8%;
+    padding: 10px 20px;
+    width: 450px; }
+    .video-text h1 {
+      font-size: 50px; }
+    .video-text p {
+      font-size: 20px;
+      line-height: 35px;
+      padding: 10px 0; }
+    .video-text button {
+      padding: 10px 70px; } }
 @media only screen and (max-width: 975px) {
   .fixed-top {
     display: flex;
@@ -838,6 +905,40 @@ ul {
               display: block; }
         .fixed-top #newMenu ul .separator {
           width: 1px;
-          background: #DDDDDD; } }
+          background: #DDDDDD; }
+
+  .video-text {
+    top: 28%;
+    left: calc((100vw - 540px)/2);
+    padding: 20px 20px 35px;
+    max-width: 540px; }
+    .video-text h1 {
+      font-size: 42px;
+      line-height: 40px; }
+    .video-text p {
+      font-size: 20px;
+      line-height: 27px;
+      padding: 20px 0; }
+    .video-text button {
+      width: 100%;
+      padding: 14px 70px; } }
+@media only screen and (max-width: 600px) {
+  .text-container {
+    height: 810px !important; }
+
+  .video-text {
+    left: 0;
+    padding: 20px 20px 35px;
+    max-width: 540px; }
+    .video-text h1 {
+      font-size: 42px;
+      line-height: 40px; }
+    .video-text p {
+      font-size: 20px;
+      line-height: 27px;
+      padding: 20px 0; }
+    .video-text button {
+      width: 100%;
+      padding: 14px; } }
 
 /*# sourceMappingURL=main.css.map */
