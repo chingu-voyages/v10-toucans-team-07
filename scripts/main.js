@@ -113,6 +113,23 @@ $(document).ready(function() {
     adjustHeader();
 
 
+    // --- Scrolldown button ---
+    $('.down-arrow-btn').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).children('a').attr('href')).offset().top}, 300, 'linear');
+    });
+
+    $(document).scroll((_.debounce(function() {
+        let y = $(this).scrollTop();
+        console.log(y + ' ' + $('header').height());
+        if (y > $('header').height()) {
+          $('.down-arrow-btn').fadeOut();
+        } else {
+          $('.down-arrow-btn').fadeIn();
+        }
+    }, 20)));
+
+
     //  Rellax.js lib
     var rellax = new Rellax(".rellax");
 

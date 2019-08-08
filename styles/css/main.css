@@ -266,6 +266,29 @@ header {
         background-color: #8B181C; }
         header .video-text button:hover a {
           text-decoration: none; }
+  header .down-arrow-btn {
+    background: #B62025;
+    text-align: center;
+    position: fixed;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding-top: -20px;
+    border: 0;
+    border-radius: 100px; }
+    header .down-arrow-btn a {
+      position: absolute;
+      width: auto;
+      height: auto;
+      font-size: 20px;
+      top: 15px;
+      color: #ffffff !important;
+      transform: translateX(-50%); }
+      header .down-arrow-btn a:hover {
+        text-decoration: none; }
 
 @media only screen and (min-width: 1191px) {
   header .navbar {
