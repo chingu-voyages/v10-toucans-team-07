@@ -425,6 +425,7 @@ header {
 		padding-top: -20px;
 		border: 0;
 		border-radius: 100px;
+		z-index: 5;
 
 		a {
 			position: absolute;
@@ -474,6 +475,10 @@ header {
 					.red-btn {
 						margin-top: -5px;
 					}
+
+					.submenu {
+						margin-top: 5px;
+					}
 				}
 			}
 		}
@@ -499,4 +504,8 @@ header {
 			}
 		}
 	}
+
+	.mobile-hero {
+        display: none;
+    }
 }
