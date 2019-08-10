@@ -48,69 +48,6 @@ $(document).ready(function() {
         window.setTimeout(hideDropdown, 100);
     });
 
-    
-    // --- Change appearance when width <= 975 ---
-    const BREAKPOINT = 975;
-
-    const headerNavbar = $('header > .fixed-top');
-    const topMiddleNav = $('#top-middle-nav');
-
-    function breakpointReached() {
-        return window.innerWidth <= BREAKPOINT;
-    }
-
-    function createNewMenu() {
-        let menu = $('<div></div>');
-        menu.attr('id', 'newMenu');
-        return menu;
-    }
-
-    function addNewEvents(menu, tabs = false) {
-        $(menu).find('.dropdown').each(function(index) {
-            $(this).on('click', showDropdown).focusout(function() {
-                window.setTimeout(hideDropdown, 100);
-            });
-        });
-
-        if (tabs) {
-            $('.nav-tabs a').on('click', activateTabEvent);
-        }
-    }
-
-    function rebootEvents() {
-        dropdowns = $('.dropdown');
-        navTabLinks = $('.nav-tabs a');
-    }
-
-    function adjustHeader() {
-        let breakpoint = breakpointReached();
-
-        if (breakpoint) {
-            if ( $('#newMenu').length === 0 ) {
-                let newMenu = createNewMenu();
-                newMenu.append(topMiddleNav);
-                if ($('#top-middle-nav')) {
-                    topMiddleNav.remove();
-                }
-
-                $(headerNavbar).append(newMenu);
-                $(newMenu).append(topMiddleNav);
-                addNewEvents(newMenu);
-            }
-        } else {
-            if ( $('#newMenu').length > 0 ) {
-                let menu = $('#newMenu');
-                menu.remove();
-                topMiddleNav.insertBefore($('#top-right-nav'));
-                addNewEvents(topMiddleNav, true);
-            }
-        }
-
-        rebootEvents();
-    }
-
-    window.onresize = _.debounce(adjustHeader, 20);
-    adjustHeader();
 
 
     // --- Scrolldown button ---

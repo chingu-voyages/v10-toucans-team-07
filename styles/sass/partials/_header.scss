@@ -38,7 +38,6 @@ header {
 	}
 
 	.fixed-top {
-		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 		background-color: #ffffff;
 
 		.navbar {
@@ -51,24 +50,23 @@ header {
 				ul {
 
 					.nav-item {
-						margin: auto 0;
 						cursor: pointer;
 						min-width: 20px;
 
 						.dropdown-trigger {
 							color: $black;
 							border-bottom: 3px transparent solid;
-							padding: 0 0 4px;
+							// padding: 0 0 4px;
 							font: 900 14.5px Lato, sans-serif; 
 							text-transform: uppercase;
 							text-align: center;
 							vertical-align: middle;
-							white-space: pre-wrap !important;
+							// white-space: pre-wrap !important;
 							word-wrap: break-word;
 							text-align: center;
 						}
 
-						@media only screen and (min-width: 978px) {
+						@media only screen and (min-width: 975px) {
 							&.dropdown:hover {
 								& > .dropdown-trigger {
 									color: $black;
@@ -82,21 +80,9 @@ header {
 							} 
 						}
 					}
-
-					.separator {
-						width: 2px;
-						height: 16px;
-						background-color: $black;
-						margin: 30px 8px 29px;
-					}
-				}
-
-				&#top-middle-nav {
-					flex-basis: 46%;
 				}
 
 				&#top-right-nav {
-					flex-basis: 23%;
 
 					& > ul {
 						justify-content: flex-end;
@@ -218,7 +204,6 @@ header {
 					display: none;
 					position: absolute;
 					top: $header-height;
-					padding: 0.75em;
 					border-top: $red-border;
 					cursor: default;
 					box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.3);
@@ -443,24 +428,30 @@ header {
 	}
 }
 
-@media only screen and (min-width: 1191px) {
+@media only screen and (min-width: 1161px) {
 	header {
+		.fixed-top {
+			box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+		}
+
 		.navbar {
 			width: 1110px; /*82%*/
 			justify-content: space-between;
 
 			.site-logo {
-				height: 55px;
+				height: 60px;
 				flex-basis: 20%;
 			}
-
+		
 			> nav {
 				ul {
 					.nav-item {
 						padding-top: 1.4rem;
 						padding-bottom: 1.5rem;
+						margin: auto 0;
 
 						.dropdown-trigger {
+							padding: 0 0 4px;
 							margin-top: 0.5rem;
 							margin-bottom: 0.5rem;
 
@@ -469,9 +460,22 @@ header {
 							}
 						}
 					}
+
+					.separator {
+						width: 2px;
+						height: 16px;
+						background-color: $black;
+						margin: 30px 8px 29px;
+					}
+				}
+
+				&#top-middle-nav {
+					flex-basis: 46%;
 				}
 
 				&#top-right-nav {
+					flex-basis: 23%;
+
 					.red-btn {
 						margin-top: -5px;
 					}
@@ -480,7 +484,15 @@ header {
 						margin-top: 5px;
 					}
 				}
+
+				.submenu {
+					padding: 0.75em;
+				}
 			}
+		}
+
+		.box-shadow {
+			display: none;
 		}
 
 		.video-text {
