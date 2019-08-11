@@ -56,29 +56,31 @@ $(document).ready(function() {
     let newSubmenu = $('.new-container > ul');
 
     let rearrangeSubmenu = function() {
-        console.log(1);
-        if (window.innerWidth < BREAKPOINT && oldSubmenu.length === 1 && $('.new-container').length === 0) {
-            console.log(3);
-            let headings = $('.submenu.wide #heading');
-            $('.submenu.wide').append($('<div></div>').addClass('new-container').append('<ul></ul>'));
-            newSubmenu = $('.new-container > ul');
+        if (window.innerWidth < BREAKPOINT) {
+            if ($('.submenu.wide > .row.no-gutters').length === 1 && $('.new-container').length === 0)
+                {
+                let headings = $('.submenu.wide #heading');
+                $('.submenu.wide').append($('<div></div>').addClass('new-container').append('<ul></ul>'));
+                newSubmenu = $('.new-container > ul');
 
-            $.each(headings, function() {
-                let field = $(this).attr('data-heading');
-                let courses = $('*[data-field="' + field + '"');
+                $.each(headings, function() {
+                    let field = $(this).attr('data-heading');
+                    let courses = $('*[data-field="' + field + '"');
 
-                let newHeading = $('<li></li>').addClass('py-2').append($(this).clone());
-                $(newSubmenu).append($(newHeading));
+                    let newHeading = $('<li></li>').addClass('py-2').append($(this).clone());
+                    $(newSubmenu).append($(newHeading));
 
-                $.each(courses, function() {
-                    let newCourse = $('<li></li>').addClass('pb-1').append($(this).clone());
-                    $(newSubmenu).append($(newCourse));
+                    $.each(courses, function() {
+                        let newCourse = $('<li></li>').addClass('pb-1').append($(this).clone());
+                        $(newSubmenu).append($(newCourse));
+                    });
                 });
-            });
 
-            $('.submenu.wide > .row.no-gutters').detach();
-            newSubmenu = $('.submenu.wide > .new-container');
+                $(newSubmenu).append($('<li></li>').addClass('py-2'));
 
+                $('.submenu.wide > .row.no-gutters').detach();
+                newSubmenu = $('.submenu.wide > .new-container');
+            }
         } else {
             if (newSubmenu.length > 0) {
                 $(newSubmenu).remove();
@@ -90,6 +92,12 @@ $(document).ready(function() {
 
     window.onresize = _.debounce(rearrangeSubmenu, 100);
     rearrangeSubmenu();
+
+
+    // --- Close tab event
+    $('.close-btn').on('click', function() {
+        $(this).parent.removeClass('visible');
+    });
 
 
     // --- Scrolldown button ---

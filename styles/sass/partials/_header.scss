@@ -487,6 +487,10 @@ header {
 
 				.submenu {
 					padding: 0.75em;
+
+					.close-btn {
+						display: none;
+					}
 				}
 			}
 		}
