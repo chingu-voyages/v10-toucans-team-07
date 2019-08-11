@@ -180,20 +180,21 @@ $header-height-1: 78px;
                             display: none;
                             position: fixed;
                             left: 0;
-                            height: calc(100vh - $header-height-1);
+                            // height: calc(100vh - $header-height-1);
                             width: 100vw;
                             max-width: 975px;
                             box-sizing: border-box;
-                            // overflow-y: hidden;
+                            overflow-y: auto;
                             padding: 0 0.75em;
                             border-top: #B72425 3px solid;
                             background: #fff;
 
                             ul {
                                 padding: 15px;
+                                width: 90%;
 
                                 h5 {
-                                    font: 14px Lato, sans-serif;
+                                    font: 700 14px Lato, sans-serif;
                                     text-transform: uppercase;
 
                                     &:hover {
@@ -208,6 +209,16 @@ $header-height-1: 78px;
                                     &:hover {
                                         color: #B72425;
                                     }
+                                }
+                            }
+
+                            &.wide {
+                                width: 100%;
+                                height: calc(100vh - #{$header-height-1});
+                                margin-bottom: 30px !important;
+
+                                .new-container {
+                                    overflow-y: none;
                                 }
                             }
 
