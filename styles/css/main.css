@@ -1107,6 +1107,9 @@ ul {
     max-width: 540px; } }
 @media only screen and (max-width: 440px) {
   #top-middle-nav ul .nav-item .dropdown-trigger {
-    padding-top: 6px !important; } }
+    padding-top: 6px !important; }
+
+  .video-text {
+    top: 78px; } }
 
 /*# sourceMappingURL=main.css.map */
