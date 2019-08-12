@@ -57,8 +57,7 @@ $(document).ready(function() {
 
     let rearrangeSubmenu = function() {
         if (window.innerWidth < BREAKPOINT) {
-            if ($('.submenu.wide > .row.no-gutters').length === 1 && $('.new-container').length === 0)
-                {
+            if ($('.submenu.wide > .row.no-gutters').length === 1 && $('.new-container').length === 0) {
                 let headings = $('.submenu.wide #heading');
                 $('.submenu.wide').append($('<div></div>').addClass('new-container').append('<ul></ul>'));
                 newSubmenu = $('.new-container > ul');
@@ -67,7 +66,7 @@ $(document).ready(function() {
                     let field = $(this).attr('data-heading');
                     let courses = $('*[data-field="' + field + '"');
 
-                    let newHeading = $('<li></li>').addClass('py-2').append($(this).clone());
+                    let newHeading = $('<li></li>').addClass('py-2').append($(this).clone().removeAttr('href'));
                     $(newSubmenu).append($(newHeading));
 
                     $.each(courses, function() {
