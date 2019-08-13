@@ -332,7 +332,7 @@ header {
 
   .mobile-hero {
     display: none; } }
-.chat {
+body > .chat {
   width: 56px;
   height: 56px;
   display: block;
@@ -342,11 +342,11 @@ header {
   z-index: 87777777;
   overflow: hidden;
   position: fixed; }
-  .chat .chatHolder {
+  body > .chat .chatHolder {
     position: absolute;
     width: 56px;
     height: 56px; }
-  .chat img {
+  body > .chat img {
     border: 0 solid #000; }
 
 footer {
@@ -1047,7 +1047,8 @@ ul {
             left: 0;
             width: 100vw;
             top: 40px !important;
-            z-index: 100; }
+            z-index: 100;
+            padding: 10px 0; }
             .fixed-top .navbar #top-right-nav .nav-item .submenu.to-left ul li {
               padding-left: 20px; }
           .fixed-top .navbar #top-right-nav .nav-item:hover {
