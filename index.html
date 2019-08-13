@@ -6,7 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Capella University: Online Accredited Degree Programs</title>
 
-   <link rel="icon" href="https://drive.google.com/uc?id=1Kd1SfXSr90ZM8bGwZQFi4SV4WTw4VxVw" type="image/jpg" sizes="16x16">
+
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://drive.google.com/uc?id=1Kd1SfXSr90ZM8bGwZQFi4SV4WTw4VxVw" type="image/jpg" sizes="16x16">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles/css/main.css">
 
@@ -15,11 +17,13 @@
 <header>
 	<div class="fixed-top">
 		<div class="navbar">
-			<img src="img/header/original" class="navbar-brand site-logo" alt="uni logo" />
+			<a href="https://www.capella.edu/">
+				<img src="img/header/original" class="navbar-brand site-logo" alt="uni logo" />
+			</a>
 			<nav id="top-middle-nav">
 				<ul class="nav mx-auto">
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-trigger my-4 py-1" href="#">Degrees + Programs</a>
+						<a class="nav-link dropdown-trigger">Degrees + Programs</a>
 						<div class="submenu wide">
 							<div class="row no-gutters">
 								<div class="col-3">
@@ -59,138 +63,182 @@
 
 								<div class="col-9 pl-5 pt-2 tab-content">
 									<div id="doctoral-degrees" class="tab-pane active" role="tabpanel" aria-labelledby="doctoral-tab">
-										<h5 class="submenu-title"><a>Compare all Doctoral Degrees</a></h5>
+										<h5 class="submenu-title"><a href="https://www.capella.edu/online-phd-programs">Compare all Doctoral Degrees</a></h5>
 										<div class="row no-gutters">
 											<div class="co-column">
-												<a><h5>Business</h5></a>
-												<a>DBA - Doctor of Business Administration</a>
-												<a>PhD in Business Management</a>
-												<a><h5>Counseling</h5></a>
-												<a>PhD in Advanced Studies in Human Behavior</a>
-												<a>PhD in Counselor Education &amp; Supervision</a>
-												<a><h5>Education</h5></a>
-												<a>EdD - Doctor of Education</a>
-												<a>EdS - Education Specialist</a>
-												<a>PhD in Education</a>
+												<a id="heading" data-heading="business" href="https://www.capella.edu/online-business-degrees/doctoral-programs">
+													<h5>Business</h5>
+												</a>
+												<a data-field="business" href="https://www.capella.edu/online-degrees/business-phd-program">DBA - Doctor of Business Administration</a>
+												<a data-field="business" href="">PhD in Business Management</a>
+												<a id="heading" data-heading="counseling" href="https://www.capella.edu/online-counseling-degrees/doctoral-programs">
+													<h5>Counseling</h5>
+												</a>
+												<a data-field="counseling" href="https://www.capella.edu/online-degrees/phd-advanced-studies-human-behavior">PhD in Advanced Studies in Human Behavior</a>
+												<a data-field="counseling" href="https://www.capella.edu/online-degrees/phd-counselor-education-supervision">PhD in Counselor Education &amp; Supervision</a>
+												<a id="heading" data-heading="education" href="https://www.capella.edu/online-education-degrees/doctoral-programs">
+													<h5>Education</h5>
+												</a>
+												<a data-field="education" href="https://www.capella.edu/online-degrees/doctor-of-education-program">EdD - Doctor of Education</a>
+												<a data-field="education" href="https://www.capella.edu/online-degrees/education-specialist-degree-program">EdS - Education Specialist</a>
+												<a data-field="education" href="https://www.capella.edu/online-degrees/education-phd-program">PhD in Education</a>
 											</div>
 											<div class="co-column">
-												<a><h5>Health Sciences</h5></a>
-												<a>DHA - Doctor of Health Administration</a>
-												<a>DrPH - Doctor of Public Health</a>
-												<a><h5>Information Technology</h5></a>
-												<a>DIT - Doctor of Information Technology</a>
-												<a>PhD in Information Technology</a>
-												<a><h5>Nursing</h5></a>
-												<a>DNP - Doctor of Nursing Practice</a>
+												<a id="heading" data-heading="health-sciences" href="https://www.capella.edu/online-health-science-degrees/doctoral-programs">
+													<h5>Health Sciences</h5>
+												</a>
+												<a data-field="health-sciences" href="https://www.capella.edu/online-degrees/doctor-of-health-administration-program">DHA - Doctor of Health Administration</a>
+												<a data-field="health-sciences" href="https://www.capella.edu/online-degrees/drph-general-public-health">DrPH - Doctor of Public Health</a>
+												<a id="heading" data-heading="information-technology" href="https://www.capella.edu/online-information-technology-degrees/doctoral-programs">
+													<h5>Information Technology</h5>
+												</a>
+												<a data-field="information-technology" href="https://www.capella.edu/online-degrees/doctor-of-information-technology-program">DIT - Doctor of Information Technology</a>
+												<a data-field="information-technology" href="https://www.capella.edu/online-degrees/information-technology-phd-program">PhD in Information Technology</a>
+												<a id="heading" data-heading="nursing" href="https://www.capella.edu/online-nursing-degrees/doctoral-programs">
+													<h5>Nursing</h5>
+												</a>
+												<a data-field="nursing" href="https://www.capella.edu/online-degrees/doctor-of-nursing-practice-program">DNP - Doctor of Nursing Practice</a>
 											</div>
 											<div class="co-column">
-												<a><h5>Psychology</h5></a>
-												<a>PhD in Psychology</a>
-												<a>PsyD - Doctor of Psychology</a>
-												<a>PsyD - Doctor of Psychology School Psychology</a>
-												<a><h5>Public Service</h5></a>
-												<a>DPA - Doctor of Public Administration</a>
-												<a>DEM - Doctor of Emergency Management</a>
-												<a>PhD in Criminal Justice</a>
-												<a>PhD in Emergency Management</a>
-												<a><h5>Social Work &amp; Human Services</h5></a>
-												<a>DSW - Doctor of Social Work</a>
-												<a>DHS - Doctor of Human Services</a>
-												<a>PhD in Human Services</a>
+												<a id="heading" data-heading="psychology" href="https://www.capella.edu/online-psychology-degrees/doctoral-programs">
+													<h5>Psychology</h5>
+												</a>
+												<a data-field="psychology" href="https://www.capella.edu/online-degrees/psychology-phd-program">PhD in Psychology</a>
+												<a data-field="psychology" href="https://www.capella.edu/online-degrees/psyd-clinical-psychology">PsyD - Doctor of Psychology</a>
+												<a data-field="psychology" href="https://www.capella.edu/online-degrees/psyd-school-psychology">PsyD - Doctor of Psychology School Psychology</a>
+												<a id="heading" data-heading="public-service" href="https://www.capella.edu/online-public-service-degrees/doctoral-programs">
+													<h5>Public Service</h5>
+												</a>
+												<a data-field="public-service" href="https://www.capella.edu/online-degrees/dpa-public-administration">DPA - Doctor of Public Administration</a>
+												<a data-field="public-service" href="https://www.capella.edu/online-degrees/dem-emergency-management">DEM - Doctor of Emergency Management</a>
+												<a data-field="public-service" href="https://www.capella.edu/online-degrees/phd-criminal-justice">PhD in Criminal Justice</a>
+												<a data-field="public-service" href="https://www.capella.edu/online-degrees/phd-emergency-management">PhD in Emergency Management</a>
+												<a id="heading" data-heading="social-work-services" href="https://www.capella.edu/online-social-work-degrees/doctoral-programs">
+													<h5>Social Work &amp; Human Services</h5>
+												</a>
+												<a data-field="social-work-services" href="https://www.capella.edu/online-degrees/dsw-social-work">DSW - Doctor of Social Work</a>
+												<a data-field="social-work-services" href="https://www.capella.edu/online-degrees/doctor-human-services-program">DHS - Doctor of Human Services</a>
+												<a data-field="social-work-services" href="https://www.capella.edu/online-degrees/human-services-phd-program">PhD in Human Services</a>
 											</div>
 										</div>
 									</div>
 									<div id="masters-degrees" class="tab-pane" role="tabpanel" aria-labelledby="masteral-tab">
-										<h5 class="submenu-title"><a>Compare all Master's Degrees</a></h5>
+										<h5 class="submenu-title"><a href="https://www.capella.edu/online-masters-degree-programs">Compare all Master's Degrees</a></h5>
 										<div class="row no-gutters">
 											<div class="co-column">
-												<a><h5>Business</h5></a>
-												<a>MBA - Master of Business Administration</a>
-												<a>MS in Human Resource Management</a>
-												<a><h5>Counseling</h5></a>
-												<a>MS in Marriage &amp; Family Counseling/Therapy</a>
-												<a>MS in Clinical Mental Health Counseling</a>
-												<a>MS in School Counseling</a>
-												<a>MS in Addiction Studies</a>
-												<a><h5>Education</h5></a>
-												<a>MEd in Teaching and Learning</a>
-												<a>MS in Education</a>
-												<a>MS in Education Innovation &amp; Technology</a>
-												<a>MS in Higher Education</a>
+												<a href="https://www.capella.edu/online-business-degrees/masters-programs">
+													<h5>Business</h5>
+												</a>
+												<a data-field="business" href="https://www.capella.edu/online-degrees/mba-program">MBA - Master of Business Administration</a>
+												<a data-field="business" href="https://www.capella.edu/online-degrees/masters-human-resource-management">MS in Human Resource Management</a>
+												<a href="https://www.capella.edu/online-counseling-degrees/masters-programs">
+													<h5>Counseling</h5>
+												</a>
+												<a data-field="counseling" href="https://www.capella.edu/online-degrees/masters-marriage-family-therapy">MS in Marriage &amp; Family Counseling/Therapy</a>
+												<a data-field="counseling" href="https://www.capella.edu/online-degrees/masters-mental-health-counseling">MS in Clinical Mental Health Counseling</a>
+												<a data-field="counseling" href="https://www.capella.edu/online-degrees/masters-school-counseling">MS in School Counseling</a>
+												<a data-field="counseling" href="https://www.capella.edu/online-degrees/masters-addiction-studies">MS in Addiction Studies</a>
+												<a href="https://www.capella.edu/online-education-degrees/masters-programs">
+													<h5>Education</h5>
+												</a>
+												<a data-field="education" href="https://www.capella.edu/online-degrees/masters-education-teaching-learning">MEd in Teaching and Learning</a>
+												<a data-field="education" href="https://www.capella.edu/online-degrees/ms-education-program">MS in Education</a>
+												<a data-field="education" href="https://www.capella.edu/online-degrees/ms-education-innovation-and-technology-program">MS in Education Innovation &amp; Technology</a>
+												<a data-field="education" href="https://www.capella.edu/online-degrees/ms-higher-education-program">MS in Higher Education</a>
 											</div>
 											<div class="co-column">
-												<a><h5>Health Sciences</h5></a>
-												<a>MHA - Master of Health Administration</a>
-												<a>MPH - Master of Public Health</a>
-												<a><h5>Information Technology</h5></a>
-												<a>MS in Analytics</a>
-												<a>MS in Information Assurance &amp; Cybersecurity</a>
-												<a>MS in Information Technology</a>
-												<a><h5>Nursing</h5></a>
-												<a>MSN - Master of Science in Nursing</a>
+												<a href="https://www.capella.edu/online-health-science-degrees/masters-programs">
+													<h5>Health Sciences</h5>
+												</a>
+												<a data-field="health-sciences" href="https://www.capella.edu/online-degrees/master-of-health-administration-program">MHA - Master of Health Administration</a>
+												<a data-field="health-sciences" href="https://www.capella.edu/online-degrees/mph-general-public-health">MPH - Master of Public Health</a>
+												<a href="https://www.capella.edu/online-information-technology-degrees/masters-programs">
+													<h5>Information Technology</h5>
+												</a>
+												<a data-field="information-technology" href="https://www.capella.edu/online-degrees/masters-analytics">MS in Analytics</a>
+												<a data-field="information-technology" href="https://www.capella.edu/online-degrees/ms-information-cybersecurity-program">MS in Information Assurance &amp; Cybersecurity</a>
+												<a data-field="information-technology" href="">MS in Information Technology</a>
+												<a href=""><h5>Nursing</h5></a>
+												<a data-field="nursing" href="https://www.capella.edu/online-degrees/ms-information-technology-program">MSN - Master of Science in Nursing</a>
 											</div>
 											<div class="co-column">
-												<a><h5>Psychology</h5></a>
-												<a>MS in Clinical Psychology</a>
-												<a>MS in Psychology</a>
-												<a><h5>Public Service</h5></a>
-												<a>MPA - Public Administration</a>
-												<a>MS in Criminal Justice</a>
-												<a>MS in Emergency Management</a>
-												<a><h5>Social Work &amp; Human Services</h5></a>
-												<a>MSW - Master of Social Work</a>
-												<a>MSW - Master of Social Work Advanced</a>
-												<a>MS in Human Services</a>
+												<a href="https://www.capella.edu/online-psychology-degrees/masters-programs"><h5>Psychology</h5></a>
+												<a data-field="psychology" href="https://www.capella.edu/online-degrees/ms-clinical-psychology-program">MS in Clinical Psychology</a>
+												<a data-field="psychology" href="https://www.capella.edu/online-degrees/ms-psychology-program">MS in Psychology</a>
+												<a href="https://www.capella.edu/online-public-service-degrees/masters-programs">
+													<h5>Public Service</h5>
+												</a>
+												<a data-field="public-service" href="https://www.capella.edu/online-degrees/mpa-public-administration">MPA - Public Administration</a>
+												<a data-field="public-service" href="https://www.capella.edu/online-degrees/masters-criminal-justice">MS in Criminal Justice</a>
+												<a data-field="public-service" href="https://www.capella.edu/online-degrees/masters-emergency-management">MS in Emergency Management</a>
+												<a href="https://www.capella.edu/online-social-work-degrees/masters-programs">
+													<h5>Social Work &amp; Human Services</h5>
+												</a>
+												<a data-field="social-work-services" href="https://www.capella.edu/online-degrees/masters-social-work">MSW - Master of Social Work</a>
+												<a data-field="social-work-services" href="https://www.capella.edu/online-degrees/masters-social-work-advanced">MSW - Master of Social Work Advanced</a>
+												<a data-field="social-work-services" href="https://www.capella.edu/online-degrees/ms-human-services-program">MS in Human Services</a>
 											</div>
 										</div>
 									</div>
 									<div id="bachelors-degrees" class="tab-pane" role="tabpanel" aria-labelledby="bachelor-tab">
-										<h5 class="submenu-title"><a>Compare all Bachelor's Degrees</a></h5>
+										<h5 class="submenu-title"><a href="https://www.capella.edu/online-bachelors-degree">Compare all Bachelor's Degrees</a></h5>
 										<div class="row no-gutters">
 											<div class="co-column">
-												<a><h5>Business</h5></a>
-												<a>BS in Business</a>
-												<a><h5>Health Sciences</h5></a>
-												<a>BS in Health Care Administration</a>
-												<a>BS in Public Health</a>
-												<a><h5>Information Technology</h5></a>
-												<a>BS in Information Technology</a>
+												<a href="https://www.capella.edu/online-business-degrees/bachelor-programs">
+													<h5>Business</h5>
+												</a>
+												<a data-field="business" href="https://www.capella.edu/online-degrees/bs-business-program">BS in Business</a>
+												<a href="https://www.capella.edu/online-health-science-degrees/bachelor-programs">
+													<h5>Health Sciences</h5>
+												</a>
+												<a data-field="health-sciences" href="https://www.capella.edu/online-degrees/bs-health-care-administration-program">BS in Health Care Administration</a>
+												<a data-field="health-sciences" href="https://www.capella.edu/degrees-programs/bachelors-degree-programs/online-health-science-degrees-bachelor-programs/bachelors-public-health">BS in Public Health</a>
+												<a href="https://www.capella.edu/online-information-technology-degrees/bachelor-programs">
+													<h5>Information Technology</h5>
+												</a>
+												<a data-field="information-technology" href="https://www.capella.edu/online-degrees/bs-information-technology-program">BS in Information Technology</a>
 											</div>
 											<div class="co-column">
-												<a><h5>Nursing</h5></a>
-												<a>BSN - Bachelor of Science in Nursing</a>
-												<a><h5>Psychology</h5></a>
-												<a>BS in Psychology General</a>
-												<a>BS in Psychology Pre-Counseling</a>
-												<a><h5>Public Serving</h5></a>
-												<a>BS in Criminal Justice</a>
+												<a href="https://www.capella.edu/online-nursing-degrees/bachelor-programs">
+													<h5>Nursing</h5>
+												</a>
+												<a data-field="nursing" href="https://www.capella.edu/online-degrees/bachelors-rn-to-bsn-completion">BSN - Bachelor of Science in Nursing</a>
+												<a href="https://www.capella.edu/online-psychology-degrees/bachelor-programs">
+													<h5>Psychology</h5>
+												</a>
+												<a data-field="psychology" href="https://www.capella.edu/online-degrees/bs-psychology-program">BS in Psychology General</a>
+												<a data-field="psychology" href="https://www.capella.edu/online-degrees/bachelors-psychology-pre-counseling">BS in Psychology Pre-Counseling</a>
+												<a href="https://www.capella.edu/online-public-service-degrees/bachelor-programs">
+													<h5>Public Service</h5>
+												</a>
+												<a data-field="public-service" href="https://www.capella.edu/online-degrees/bachelors-criminal-justice">BS in Criminal Justice</a>
 											</div>
 										</div>
 									</div>
 									<div id="certificates" class="tab-pane" role="tabpanel" aria-labelledby="certificates-tab">
-										<h5 class="submenu-title"><a>Compare all Certificates</a></h5>
+										<h5 class="submenu-title"><a href="https://www.capella.edu/online-certificate-programs">Compare all Certificates</a></h5>
 										<div class="row no-gutters">
 											<div class="co-column">
 												<a><h5>Business</h5></a>
-												<a>Certificates</a>
+												<a data-field="business" href="https://www.capella.edu/online-degrees/business-certificate-programs">Certificates</a>
 												<a><h5>Counseling</h5></a>
-												<a>Certificates</a>
+												<a data-field="counseling" href="https://www.capella.edu/online-degrees/counseling-certificate-programs">Certificates</a>
 												<a><h5>Education</h5></a>
-												<a>Certificates</a>
-												<a>Professional Development</a>
+												<a data-field="education" href="https://www.capella.edu/online-degrees/education-certificate-programs">Certificates</a>
+												<a data-field="education" href="https://www.capella.edu/online-degrees/education-professional-development">Professional Development</a>
 											</div>
 											<div class="co-column">
 												<a><h5>Health Sciences</h5></a>
-												<a>Health Administration Certificates</a>
-												<a>Public Health Certificates</a>
+												<a data-field="health-sciences" href="https://www.capella.edu/online-degrees/health-science-certificate-programs">Health Administration Certificates</a>
+												<a data-field="health-sciences" href="https://www.capella.edu/online-degrees/public-health-certificate-programs">Public Health Certificates</a>
 												<a><h5>Information Technology</h5></a>
-												<a>Certificates</a>
+												<a data-field="information-technology" href="https://www.capella.edu/online-degrees/information-technology-certificate-programs">Certificates</a>
 												<a><h5>Nursing</h5></a>
-												<a>Certificates</a>
+												<a data-field="nursing" href="https://www.capella.edu/online-degrees/nursing-certificate-programs">Certificates</a>
 											</div>
 											<div class="co-column">
 												<a><h5>Psychology</h5></a>
-												<a>Certificates</a>
+												<a data-field="psychology" href="https://www.capella.edu/online-degrees/psychology-certificate-programs">Certificates</a>
 											</div>
 										</div>
 									</div>
@@ -198,124 +246,158 @@
 										<h5 class="submenu-title"><a>Compare all Individual Courses</a></h5>
 										<div class="row no-gutters">
 											<div class="co-column">
-												<a><h5>Counseling &amp; Psychology</h5></a>
-												<a><h5>Business</h5></a>
-												<a><h5>Division of Arts and Sciences</h5></a>
+												<a id="heading" data-heading="counseling-psychology" href="https://www.capella.edu/individual-courses/counseling-and-psychology">
+													<h5>Counseling &amp; Psychology</h5>
+												</a>
+												<a href="https://www.capella.edu/individual-courses/business">
+													<h5>Business</h5>
+												</a>
+												<a id="heading" data-heading="division-arts-sciences" href="https://www.capella.edu/individual-courses/arts-and-sciences">
+													<h5>Division of Arts and Sciences</h5>
+												</a>
 											</div>
 											<div class="co-column">
-												<a><h5>Education</h5></a>
-												<a><h5>Information Technology</h5></a>
-												<a><h5>Nursing and Health Sciences</h5></a>
+												<a href="https://www.capella.edu/individual-courses/education">
+													<h5>Education</h5>
+												</a>
+												<a href="https://www.capella.edu/individual-courses/information-technology">
+													<h5>Information Technology</h5>
+												</a>
+												<a id="heading" data-heading="nursing-health" href="https://www.capella.edu/individual-courses/nursing-health-sciences">
+													<h5>Nursing and Health Sciences</h5>
+												</a>
 											</div>
 											<div class="co-column">
-												<a><h5>Public Services</h5></a>
+												<a id="heading" data-heading="public-services" href="https://www.capella.edu/individual-courses/public-services">
+													<h5>Public Services</h5>
+												</a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+							<div class="close-btn">&times;</div>
 						</div>
 					</li>
 					<span class="separator"></span>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-trigger my-4 py-1" href="#">Capella Experience</a>
+						<a class="nav-link dropdown-trigger">Capella Experience</a>
 						<div class="submenu">
 							<ul>
-								<li class="pb-1"><a href="#"><h5>Why Choose Capella?</h5></a></li>
-								<li class="pb-1"><a href="#">Accreditation</a></li>
-								<li class="pb-1"><a href="#">Competency-Based Education</a></li>
-								<li class="pb-1"><a href="#">Student Experience</a></li>
-								<li class="pb-2"><a href="#">The Doctoral Journey</a></li>
-								<li class="py-2"><a href="#"><h5>Compare Online Learning Formats</h5></a></li>
-								<li class="pb-1"><a href="#">FlexPath Learning Format</a></li>
-								<li class="pb-1"><a href="#">GuidedPath Learning Format</a></li>
-								<li class="pb-1"><a href="#">Path Finder Quiz</a></li>
-								<li class="pb-2"><a href="#">Trial Course</a></li>
-								<li class="py-2"><a href="#"><h5>Support</h5></a></li>
-								<li class="pb-1"><a href="#">Faculty</a></li>
-								<li class="pb-1"><a href="#">Career Services</a></li>
-								<li class="pb-1"><a href="#">Search Faculty</a></li>
-								<li class="pb-1"><a href="#">Capella University Blog</a></li>
-								<li class="pb-1"><a href="#">Campus Center Locations</a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/capella-experience/why-choose-capella-university"><h5>Why Choose Capella?</h5></a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/capella-experience/why-choose-capella-university/university-accreditation">Accreditation</a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/capella-experience/competency-based-education">Competency-Based Education</a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/capella-experience/why-choose-capella-university/student-experience#">Student Experience</a></li>
+								<li class="pb-2"><a href="https://www.capella.edu/capella-experience/doctoral-journey">The Doctoral Journey</a></li>
+								<li class="py-2"><a href="#https://www.capella.edu/capella-experience/compare-learning-formats"><h5>Compare Online Learning Formats</h5></a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/capella-experience/flexpath">FlexPath Learning Format</a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/capella-experience/guidedpath">GuidedPath Learning Format</a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/capella-experience/path-finder-quiz">Path Finder Quiz</a></li>
+								<li class="pb-2"><a href="https://www.capella.edu/capella-experience/trial-course-registration">Trial Course</a></li>
+								<li class="py-2"><a href="https://www.capella.edu/capella-experience/support"><h5>Support</h5></a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/capella-experience/support/capella-faculty">Faculty</a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/capella-experience/support/search-faculty">Career Services</a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/capella-experience/support/search-faculty">Search Faculty</a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/capella-experience/support/cu-blogs">Capella University Blog</a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/campus-locations">Campus Center Locations</a></li>
 							</ul>
+							<div class="close-btn">&times;</div>
 						</div>
 					</li>
 					<span class="separator"></span>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-trigger my-4 py-1" href="#">Financing</a>
+						<a class="nav-link dropdown-trigger py-2">Financing</a>
 						<div class="submenu">
 							<ul>
-								<li class="pb-1"><a href="#"><h5>Paying for your degree</h5></a></li>
-								<li class="pb-1"><a href="#">Tuition &amp; Fees</a></li>
-								<li class="pb-2"><a href="#">Return on Your Investment</a></li>
-								<li class="py-2"><a href="#"><h5>Ways to save</h5></a></li>
-								<li class="pb-1"><a href="#">Capella Progress Rewards and Scholarships</a></li>
-								<li class="pb-1"><a href="#">Grants</a></li>
-								<li class="pb-1"><a href="#">Low Cost Education Courses</a></li>
-								<li class="pb-3"><a href="#">Prior Learning Assessment</a></li>
-								<li class="pb-3"><a href="#"><h5>Military Benefits</h5></a></li>
-								<li class="pb-1"><a href="#"><h5>Federal Financial Aid</h5></a></li>
-								<li class="pb-1"><a href="#">Financial Aid Policies</a></li>
-								<li class="pb-1"><a href="#">Net Price Calculator</a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/tuition-financial-aid/financial-planning"><h5>Paying for your degree</h5></a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/tuition-financial-aid/tuition-fees">Tuition &amp; Fees</a></li>
+								<li class="pb-2"><a href="https://www.capella.edu/tuition-financial-aid/roi">Return on Your Investment</a></li>
+								<li class="py-2"><a href="https://www.capella.edu/tuition-financial-aid/scholarships-grants"><h5>Ways to save</h5></a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/scholarship">Capella Progress Rewards and Scholarships</a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/tuition-financial-aid/scholarships-grants/grants">Grants</a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/tuition-financial-aid/scholarships-grants/low-cost-undergrad-credits">Low Cost Education Courses</a></li>
+								<li class="pb-3"><a href="https://www.capella.edu/tuition-financial-aid/scholarships-grants/prior-learning-assessment">Prior Learning Assessment</a></li>
+								<li class="pb-3"><a href="https://www.capella.edu/tuition-financial-aid/military/benefits"><h5>Military Benefits</h5></a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/tuition-financial-aid/financial-aid"><h5>Federal Financial Aid</h5></a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/tuition-financial-aid/financial-aid/policies">Financial Aid Policies</a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/tuition-financial-aid/net-price-calculator">Net Price Calculator</a></li>
 							</ul>
+							<div class="close-btn">&times;</div>
 						</div>
 					</li>
 					<span class="separator"></span>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-trigger my-4 py-1" href="#">Apply</a>
+						<a class="nav-link dropdown-trigger py-2">Apply</a>
 						<div class="submenu">
 							<ul>
-								<li class="pb-1"><a href="#"><h5>Admissions</h5></a></li>
-								<li class="pb-1"><a href="#">Admissions Requirements</a></li>
-								<li class="pb-1"><a href="#">International Students</a></li>
-								<li class="pb-1"><a href="#">Transferring Credits</a></li>
-								<li class="pt-3"><a href="#"><h5>Apply Now</h5></a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/admissions"><h5>Admissions</h5></a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/admissions/requirements">Admissions Requirements</a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/admissions/international-students">International Students</a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/admissions/transfers">Transferring Credits</a></li>
+								<li class="pt-3"><a href="https://www.capella.edu/admissions/apply-now"><h5>Apply Now</h5></a></li>
 							</ul>
+							<div class="close-btn">&times;</div>
 						</div>
 					</li>
 				</ul>
 			</nav>
 			<nav id="top-right-nav">
 				<ul class="nav">
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-trigger my-4 py-1" href="#">
+					<li class="nav-item dropdown red-btn">
+						<a class="nav-link dropdown-trigger">
 							<div class="btn-icon help"></div>
-							<div class="btn-label">Ask a question</div>
+							<div class="btn-label py-2">Ask a question</div>
 						</a>
 						<div class="submenu px-3">
 							<h5>Connect with us your way</h5>
 							<ul>
-								<li class="py-1"><a href="#">Schedule Consultation</a></li>
-								<li class="py-1"><a href="#">Email Us</a></li>
-								<li class="py-1"><a href="#">Request Information</a></li>
-								<li class="py-1"><a href="#">Call 1.866.679.9682</a></li>
-								<li class="py-1"><a href="#">Chat</a></li>
+								<li class="py-1"><a href="https://www.capella.edu/content/capella-shared-content/shared/form-profiles/irfshort-schedule-consultation"><div class="link-icon calendar"></div>Schedule Consultation</a></li>
+								<li class="py-1"><a href="https://www.capella.edu/content/capella-shared-content/shared/form-profiles/email_default_122017"><div class="link-icon email"></div>&nbsp;Email Us</a></li>
+								<li class="py-1"><a href="https://www.capella.edu/content/capella-shared-content/shared/form-profiles/irfshort-request-more-information"><div class="link-icon notepad"></div>&nbsp;Request Information</a></li>
+								<li class="py-1"><a href="#"><div class="link-icon telephone"></div>&nbsp;Call 1.866.679.9682</a></li>
+								<li class="py-1"><a href="#"><div class="link-icon chat"></div>&nbsp;Chat</a></li>
 							</ul>
 						</div>
 					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-trigger my-4 py-1" href="#">
+					<li class="nav-item dropdown red-btn">
+						<a class="nav-link dropdown-trigger">
 							<div class="btn-icon login"></div>
-							<div class="btn-label">Log in</div>
+							<div class="btn-label py-2">Log in</div>
 						</a>
 						<div class="submenu to-left px-3">
 							<ul>
-								<li class="pb-1"><a href="#">Prospective Students</a></li>
-								<li class="pb-1"><a href="#">Applicants</a></li>
-								<li class="pb-1"><a href="#">Students &amp; Alumni</a></li>
-								<li class="pb-1"><a href="#">Faculty</a></li>
+								<li class="pb-1"><a href="https://www.capella.edu/content/capella-shared-content/shared/form-profiles/login_default_092017">Prospective Students</a></li>
+								<li class="pb-1"><a href="https://cs.capella.edu/loginexisting.html">Applicants</a></li>
+								<li class="pb-1"><a href="https://campus.capella.edu/">Students &amp; Alumni</a></li>
+								<li class="pb-1"><a href="http://campus.capella.edu/web/faculty/">Faculty</a></li>
 							</ul>
 						</div>
 					</li>
 				</ul>
 			</nav>
 		</div>
+		<div class="box-shadow">&nbsp;</div>
 	</div>
-	<section class="video-container">
-		<!-- Placeholder for the meantime -->
-	</section>
+	<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+		<source src="img/header/capella-video.mp4" type="video/mp4">
+	</video>
+	<img src="img/header/mobile_banner.jpg" class="mobile-hero" alt="mobile banner image" />
+	<div class="text-container">
+		<div class="video-text">
+			<h1>Her "and" is earning a degree online.</h1>
+			<p>
+				Project leader, dog mom, best friend&ndash;and student. Pursuing a
+				degree is possible with FlexPath from Capella, an online university.
+				It's education reinvented.
+			</p>
+			<button class="red-btn">
+				<a href="https://www.capella.edu/online-degrees/?aa_icid=FYP_hero_image_button" target="_blank">Find Your Program</a>
+			</button>
+		</div>
+	</div>
+	<button class="down-arrow-btn"><a href="#main">&xvee;</a></button>
 </header>
-    <main>
+    <main id="main">
       <!--                MAIN ONE                    -->
       <section class="section-one">
         <div class="notebook-container">
@@ -698,7 +780,7 @@
 
 
      <script src="scripts/jquery-3.4.1.js"></script>
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
      <script src="scripts/main.js"></script>
