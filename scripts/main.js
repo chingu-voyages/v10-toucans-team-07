@@ -107,6 +107,12 @@ $(document).ready(function() {
         $(this).removeClass('active');
     });
 
+    // --- Remove active background when exit buttons are clicked
+    $('.close-btn').on('click', function() {
+        $(this).parent().parent().children('a').removeClass('active');
+    });
+
+
     // --- Scrolldown button ---
     $('.down-arrow-btn').on('click', function(e) {
         e.preventDefault();
