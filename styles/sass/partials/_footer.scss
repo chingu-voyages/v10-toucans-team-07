@@ -96,6 +96,18 @@ footer {
 @media all and (max-width: 992px){
 
   footer{
+    .container {
+      padding-top: 30px;
+    }
+
+    .nav-link {
+      padding-left: 0;
+    }
+
+    .nav-inverse .nav-item .nav-link {
+      padding: 0.25em 0;
+    }
+
     h5{
       position: relative;
     }
