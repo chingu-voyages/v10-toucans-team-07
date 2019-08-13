@@ -93,11 +93,19 @@ $(document).ready(function() {
     rearrangeSubmenu();
 
 
-    // --- Close tab event
-    $('.close-btn').on('click', function() {
-        $(this).parent.removeClass('visible');
-    });
+    // --- Close tab event - removed because of inconsistencies
+    // $('.close-btn').on('click', function() {
+    //     $(this).parent().removeClass('visible');
+    // });
 
+
+    // --- Turn dropdown links backgrounds red when active
+    const triggers = $('#top-middle-nav .dropdown-trigger');
+    triggers.on('click', function() {
+        $(this).toggleClass('active');
+    }).on('focusout', function() {
+        $(this).removeClass('active');
+    });
 
     // --- Scrolldown button ---
     $('.down-arrow-btn').on('click', function(e) {
