@@ -450,7 +450,7 @@ ul {
     line-height: 36px;
     line-break: 1.6em; }
     main .notebook-image {
-      background: no-repeat url("/img/main/images/HP_notebooksPen_mobile_300x341px.jpg");
+      background: no-repeat url("../../img/main/images/HP_notebooksPen_mobile_300x341px.jpg");
       width: 400px;
       height: 400px; }
     main .flexpath-title,
@@ -607,8 +607,7 @@ ul {
     main .section-one .notebook-container {
       width: 55%; }
       main .section-one .notebook-container .notebook-image {
-        background: no-repeat url(/img/main/images/HP_notebooksPen_desktop_618x972px.jpg);
-        z-index: -999999;
+        background: no-repeat url("../../img/main/images/HP_notebooksPen_desktop_618x972px.jpg");
         width: 90%;
         height: 100%;
         background-size: contain; }
@@ -690,7 +689,7 @@ ul {
       width: 60%;
       height: 1150px; }
       main .section-one .notebook-container .notebook-image {
-        background: no-repeat url("/img/main/images/HP_notebooksPen_desktop_618x972px.jpg");
+        background: no-repeat url("../../img/main/images/HP_notebooksPen_desktop_618x972px.jpg");
         width: 100%;
         height: 100%;
         background-size: contain; }
@@ -799,7 +798,7 @@ ul {
     left: -27em; }
     main .section-two .floating-card .svg-ampersand {
       display: block;
-      background: no-repeat url(/img/main/images/ampersand.svg);
+      background: no-repeat url("../../img/main/images/ampersand.svg");
       height: 515px;
       width: 100%;
       position: absolute;
@@ -847,12 +846,12 @@ ul {
     height: 620px;
     line-height: 1.8em;
     left: -27em;
-    bottom: 100px; } }
+    bottom: 300px; } }
 @media screen and (min-width: 1700px) {
   main .section-two .floating-card {
     width: 600px;
     height: 620px;
-    bottom: 100px; } }
+    bottom: 470px; } }
 @media only screen and (min-width: 976px) and (max-width: 1160px) {
   .fixed-top {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3); }

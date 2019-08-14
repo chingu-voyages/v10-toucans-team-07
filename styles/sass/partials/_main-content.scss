@@ -31,7 +31,7 @@ ul {
 
     .notebook-image {
       background: no-repeat
-        url("/img/main/images/HP_notebooksPen_mobile_300x341px.jpg");
+        url("../../img/main/images/HP_notebooksPen_mobile_300x341px.jpg");
       width: 400px;
       height: 400px;
     }
@@ -247,7 +247,7 @@ ul {
 
         .notebook-image {
           background: no-repeat
-            url(/img/main/images/HP_notebooksPen_desktop_618x972px.jpg);
+            url("../../img/main/images/HP_notebooksPen_desktop_618x972px.jpg");
           width: 90%;
           height: 100%;
           background-size: contain;
@@ -372,7 +372,7 @@ ul {
 
         .notebook-image {
           background: no-repeat
-            url("/img/main/images/HP_notebooksPen_desktop_618x972px.jpg");
+            url("../../img/main/images/HP_notebooksPen_desktop_618x972px.jpg");
           width: 100%;
           height: 100%;
           background-size: contain;
@@ -543,7 +543,7 @@ ul {
         // bottom: 100px;
         .svg-ampersand{
           display: block;
-          background: no-repeat url(/img/main/images/ampersand.svg);
+          background: no-repeat url("../../img/main/images/ampersand.svg");
           height: 515px;
           width: 100%;
           position: absolute;
