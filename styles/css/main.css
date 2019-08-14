@@ -985,7 +985,7 @@ ul {
                 padding-bottom: 75%; }
               .fixed-top .navbar #top-middle-nav ul .nav-item .submenu ul {
                 padding: 15px;
-                width: 90%; }
+                width: 100%; }
                 .fixed-top .navbar #top-middle-nav ul .nav-item .submenu ul h5 {
                   font: 700 14px Lato, sans-serif;
                   text-transform: uppercase; }
