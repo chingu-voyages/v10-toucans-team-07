@@ -608,6 +608,7 @@ ul {
       width: 55%; }
       main .section-one .notebook-container .notebook-image {
         background: no-repeat url("../../img/main/images/HP_notebooksPen_desktop_618x972px.jpg");
+        z-index: -999999;
         width: 90%;
         height: 100%;
         background-size: contain; }
@@ -846,12 +847,12 @@ ul {
     height: 620px;
     line-height: 1.8em;
     left: -27em;
-    bottom: 300px; } }
+    bottom: 100px; } }
 @media screen and (min-width: 1700px) {
   main .section-two .floating-card {
     width: 600px;
     height: 620px;
-    bottom: 470px; } }
+    bottom: 100px; } }
 @media only screen and (min-width: 976px) and (max-width: 1160px) {
   .fixed-top {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3); }
