@@ -401,7 +401,7 @@
       <!--                MAIN ONE                    -->
       <section class="section-one">
         <div class="notebook-container">
-          <div class="notebook-image rellax" data-rellax-speed="1"></div>
+          <div class="notebook-image rellax" data-rellax-speed="1.5" style="z-index: -99999" ></div>
         </div>
         <div class="flexpath-title">
           <div class="title">
@@ -430,8 +430,9 @@
 
         <div
           class="coffee-img rellax"
-          data-rellax-speed="1"
-          style="z-index: -100"
+          data-rellax-speed="1.1"
+		  style="z-index: -100;
+		  padding-top: 5em;"
         >
 
           <img class="banana-mobile"
@@ -456,19 +457,21 @@
             </div>
           </div>
           <div class="degrees-stats">
-            <div class="top-stats">
-              <h1 class="js-stats">88<span>%</span></h1>
-              <p>of Capella faculty hold doctorates</p>
-            </div>
-            <div class="bottom-stats">
-              <h1 class="js-stats">97<span>%</span></h1>
-              <p>
-                of employers surveyed rated the work performance of Capella
-                graduates as proficient or exceptional
-              </p>
-              <p class="italics">Alumni Employer Survey, 2016</p>
-            </div>
-          </div>
+			<div class="top-stats">
+				  <h1 class="js-stats js-stats-top">88</h1>
+				  <h1 class="perc">%</h1>
+				  <p>of Capella faculty hold doctorates</p>
+			</div>
+			  <div class="bottom-stats">
+				  <h1 class="js-stats js-stats-bottom">97</h1>
+				  <h1 class="perc">%</h1>
+				  <p>
+			of employers surveyed rated the work performance of Capella
+			graduates as proficient or exceptional
+				  </p>
+				  <p class="italics">Alumni Employer Survey, 2016</p>
+			</div>
+	  </div>
         </div>
       </section>
       <!--               MAIN TWO            -->
@@ -782,6 +785,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js"></script>
 	<script src="scripts/main.js"></script>
 
 </body>

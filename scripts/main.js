@@ -133,6 +133,51 @@ $(document).ready(function() {
     //  Rellax.js lib
     var rellax = new Rellax(".rellax");
 
-    // Adding Parallax to floating card element above 1200px width
-    let floating_card = document.querySelector('.floating-card');
+    // Stats Counter ~~~
+let section = document.querySelector(".degrees-stats");
+let hasEntered = false;
+
+window.addEventListener("scroll", e => {
+  let shouldAnimate = window.scrollY + window.innerHeight >= section.offsetTop;
+
+  if (shouldAnimate && !hasEntered) {
+    hasEntered = true;
+        
+      $(".js-stats-top").each(function() {
+        $(this)
+          .prop("Counter", 1)
+          .animate(
+            {
+              Counter: $(this).text()
+            },
+            {
+              duration: 3000,
+              easing: "swing",
+              step: function(now) {
+                $(this).text(Math.ceil(now));
+              }
+            }
+          );
+      });
+
+      $(".js-stats-bottom").each(function() {
+        $(this)
+          .prop("Counter", 1)
+          .animate(
+            {
+              Counter: $(this).text()
+            },
+            {
+              duration: 3000,
+              easing: "swing",
+              step: function(now) {
+                $(this).text(Math.ceil(now));
+              }
+            }
+          );
+      });
+     
+  }
+});
+
 });
